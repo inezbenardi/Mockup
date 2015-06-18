@@ -15,9 +15,8 @@
     <link href="css/style2.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/bs_leftnavi.css">
     <script src="js/bs_leftnavi.js"></script>
-
-
-
+	
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -28,7 +27,7 @@
 </head>
 <body>
 <!-- header logo: style can be found in header.less -->
-<div class="main-content">
+<!-- tamnahinin -->
     <aside class="left-content">
 
         <div class="logo">
@@ -53,6 +52,69 @@
                     </li>
                     <li>
                         <a href="#">Directorate Performance</a><br />
+                <div class="wrapper row-offcanvas row-offcanvas-left">
+                    <!-- Left side column. contains the logo and sidebar -->
+                    <aside class="left-side sidebar-offcanvas">
+
+
+                        <!-- sidebar: style can be found in sidebar.less -->
+                        <section class="sidebar" id="menu">
+
+                                <ul class="sidebar-menu-left">
+                                    <div style="background-color:#3f454f;height:70px;padding-top:15px;"><img src="css/img/logopear.png"/></div>
+                                    <li class="active"><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i> <span>DASH<br/>BOARD</span></a></li>
+
+                                    <li><a href="#" class="menu_plan"><i class="fa fa-calendar"></i> <span>PLAN</span></a></li>
+
+                                    <li><a href="#"class="menu_execute"><i class="fa fa-gavel"></i> <span>EXECUTE</span></a></li>
+
+                                    <li><a href="#"class="menu_assess"><i class="fa fa-edit"></i> <span>ASSESS</span></a></li>
+
+                                    <li><a href="#"class="menu_report"><i class="fa fa-bar-chart-o"></i> <span>REPORT</span></a></li>
+
+                                </ul>
+
+
+
+                            <div class="sidebar-menu-right">
+
+                                <div class="logo_top"><img src="css/img/logo_blue.png"/></div>
+
+                                <div class="submenu">
+                                <ul class="submenu_dashboard">
+
+                                    <div class="accordion">
+                                        <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
+                                        <div class="sublevel">
+                                           <a href="production.html"> Productivity & Efficiency</a><br/>
+                                            <a href="financial.html"> Financial Strength</a><br/>
+                                            <a href="stakeholder.html"> Stakeholder Responsible</a><br/>
+                                            <a href="safety.html"> Safety</a>
+                                        </div>
+                                    </div>
+                                    <a href="#">Directorate Performance</a><br/>
+                                    <div class="accordion">
+                                        <a href="#">Function Performance<span class="fa fa-angle-down"></span></a><br/>
+                                        <div  class="sublevel">
+                                            <a href="#"> QHSE</a><br/>
+                                            <a href="#"> HCD</a><br/>
+                                            <a href="#"> Procurement</a><br/>
+                                            <a href="#"> Maintance</a><br/>
+                                        </div>
+                                    </div>
+                                    <a href="#">Economic Summary</a><br/>
+                                    <a href="#">Summary KO</a><br/>
+                                    <a href="#">Economic Summary</a><br/>
+                                    <a href="index2.html">PMS Summary</a><br/>
+                                    <div class="accordion">
+                                        <a href="#">Configuration Setting<span class="fa fa-angle-down"></span></a><br/>
+                                        <div  class="sublevel">
+                                            <a href="#"> Template</a><br/>
+                                            <a href="templateeditor.html"> Template Editor</a><br/>
+                                        </div>
+                                    </div>
+
+
 
                     </li>
                     <li>
@@ -119,7 +181,42 @@
                             <li><a href="#"> Key Output Category</a></li>
                             <li> <a href="#"> Scenario List</a></li>
                             <li><a href="#"> EM Summary</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="accordion">
+                                        <a href="#">Performance Setting<span class="fa fa-angle-down"></span></a><br/>
+                                        <div  class="sublevel">
+                                            <a href="#"> Setting Target</a><br/>
+                                            <a href="#"> Corporate Portfolio</a><br/>
 
+                                        </div>
+                                    </div>
+                                    <a href="#">Plan Resource</a><br/>
+                                    <a href="#">Project Setting</a><br/>
+
+                                    <div class="accordion">
+                                        <a href="#">Economic Model<span class="fa fa-angle-down"></span></a><br/>
+                                        <div class="sublevel">
+                                            <a href="#"> Configuration</a><br/>
+                                            <a href="#"> Key Assumption Configuration</a><br/>
+                                            <a href="#"> Operation Data Configuration</a><br/>
+                                            <a href="#"> Key Output Configuration</a><br/>
+                                            <a href="#"> Key Output Template</a><br/>
+                                            <a href="#"> Master</a><br/>
+                                            <a href="#"> Operation Data Category</a><br/>
+                                            <a href="#"> Key Assumption Stage</a><br/>
+                                            <a href="#"> Key Assumption Category</a><br/>
+                                            <a href="#"> Key Output Category</a><br/>
+                                            <a href="#"> Scenario List</a><br/>
+                                            <a href="#"> EM Summary</a><br/>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <ul class="submenu_execute" style="display:none;">
+
+                                    <a href="#">KPI Achievement</a><br/>
+                                    <a href="#">Actual Resource</a><br/>
+                                    <a href="#">Project Progress</a><br/>
 
                         </ul>
                     </li>
@@ -131,6 +228,17 @@
                     <li><a href="#">Actual Resource</a></li>
                     <li> <a href="#">Project Progress</a></li>
                 </ul>
+                                </ul>
+                                <ul class="submenu_assess" style="display:none;">
+                                    <a href="#">Project Impact</a><br/>
+                                    <a href="#">Resource Utilization</a><br/>
+                                    <a href="#">Economic Review</a><br/>
+
+                                </ul>
+                                <ul class="submenu_report"style="display:none;">
+                                    <a href="#">Daily Execution Report</a><br/>
+                                    <a href="#">Management Information Report</a><br/>
+                                    <a href="#">KPI Test</a><br/>
 
             </li>
             <li><a href="#" class="menu_assess"><i class="fa fa-edit"></i><span>ASSESS</span></a>
@@ -168,13 +276,25 @@
     </aside>
 
 
+                    <aside class="right-side">
 
     <aside class="right-content">
 
 
 
+                        <!-- Main content -->
+                        <div class="toggleclose">
+                            <a href="#" class="sidebar-toggle fa fa-caret-left" data-toggle="offcanvas" role="button">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
 
         <section>
+                        </div>
+                        <div class="row content">
+                            <section>
 
 
                                 <div class="title_page">
@@ -215,6 +335,8 @@
                                             ante non augue.</p>
                                     </div>
                                 </button>
+                            </section>
+                        </div>
 
 
 <div class="col-md-12">
@@ -244,12 +366,321 @@
         </div>
 </div>
 
+
+
+                    </aside>
+                </div>
+        <!-- ./wrapper -->
+
+
+
+        <!-- Modal -->
+        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="row">
+                            <div class="trafficlight green"></div>
+                            <div class="title">Fatality / Strap Disability</div>
+                            <div class="description_year">1st Operation year</div>
+                            <div class="description_month">June 2015</div>
+                        </div>
+
+                    </div>
+                    <div class="modal-body">
+                        <div role="tabpanel">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#groupkpi" aria-controls="home" role="tab" data-toggle="tab">
+                                    <div class="fa fa-th-list"></div>
+                                    <div>Group KPI</div>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#clausalmodel" aria-controls="home" role="tab" data-toggle="tab">
+                                        <div class="fa fa-hand-o-right"></div>
+                                        <div>Clausal Model</div>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#graphchart" aria-controls="home" role="tab" data-toggle="tab">
+                                        <div class="fa fa-bar-chart-o"></div>
+                                        <div>Graph Chart</div>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#remark" aria-controls="home" role="tab" data-toggle="tab">
+                                        <div class="fa fa-pencil"></div>
+                                        <div>Remark</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="groupkpi">
+
+                                    <table class="table table-striped table-bordered table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th rowspan="2">Group</th>
+                                            <th rowspan="2">Performance Indicator</th>
+                                            <th rowspan="2">Unit</th>
+
+                                            <th rowspan="2">Period</th>
+
+                                            <th colspan="2">Actual</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="index">Yearly</th>
+                                            <th class="index">Monthly</th>
+                                                                                  </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>Fatality</td>
+                                            <td>Fatality / Strap Disability</td>
+                                            <td>Case</td>
+                                            <td>Monthly</td>
+                                            <td>0</td>
+                                            <td></td>
+
+
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="clausalmodel">
+                                    <table class="table table-striped table-bordered table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th rowspan="2">Performance Indicator</th>
+                                            <th rowspan="2">Unit</th>
+
+                                            <th rowspan="2">Relation Model</th>
+
+                                            <th colspan="2">Actual</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="index">Yearly</th>
+                                            <th class="index">Monthly</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>DAFWC</td>
+                                            <td>Case</td>
+                                            <td>Quanlitative (+)</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>LOPC</td>
+                                            <td>Case</td>
+                                            <td>Quanlitative (+)</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>Security Incident</td>
+                                            <td>Case</td>
+                                            <td>Quanlitative (+)</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>QHSE Training Attend (%)</td>
+                                            <td>%</td>
+                                            <td>Quanlitative (+)</td>
+                                            <td>20</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>QHSE Closure Actions (%)</td>
+                                            <td>%</td>
+                                            <td>Quanlitative (+)</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="graphchart">
+
+                                    <div class="btn-group btn-more">
+                                        <button type="button" class="dropdown-toggle icon_more" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="fa fa-bars"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Print Chart</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">View Tabular</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Download PNG Image</a></li>
+                                            <li><a href="#">Download JPEG Image</a></li>
+                                            <li><a href="#">Download PDF Document</a></li>
+                                            <li><a href="#">Download SVG Vector Image</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="description_year">Yearly</div>
+                                    <div class="content_tab"><img src="css/img/graphic1.jpg"/></div>
+                                    <hr>
+
+                                    <div class="btn-group btn-more">
+                                        <button type="button" class="dropdown-toggle icon_more" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="fa fa-bars"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Print Chart</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">View Tabular</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Download PNG Image</a></li>
+                                            <li><a href="#">Download JPEG Image</a></li>
+                                            <li><a href="#">Download PDF Document</a></li>
+                                            <li><a href="#">Download SVG Vector Image</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="description_year">Monthly</div>
+                                    <div class="content_tab"><img src="css/img/graphic2.png"/></div>
+                                    <hr>
+                                    <div class="btn-group btn-more">
+                                        <button type="button" class="dropdown-toggle icon_more" data-toggle="dropdown" aria-expanded="false">
+                                            <span class="fa fa-bars"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Print Chart</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">View Tabular</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Download PNG Image</a></li>
+                                            <li><a href="#">Download JPEG Image</a></li>
+                                            <li><a href="#">Download PDF Document</a></li>
+                                            <li><a href="#">Download SVG Vector Image</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="description_year">Monthly Commulative</div>
+                                    <div class="content_tab"><img src="css/img/graphic1.jpg"/></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="remark">
+
+                                    <table class="table table-striped table-bordered table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Period</th>
+
+                                            <th>Remark</th>
+
+
+                                        </tr>
+
+                                        </thead>
+                                        <tbody>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>Yearly</td>
+                                            <td>2015</td>
+                                            <td>-</td>
+
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td>Monthly</td>
+                                            <td>January</td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>February</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>March</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>April</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td></td>
+                                            <td>May</td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>June</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>July</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>August</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+
+                                            <td></td>
+                                            <td>September</td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>October</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>November</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-toggle="modal" data-target="#myModal">
+                                            <td></td>
+                                            <td>December</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+
 </section>
                     </aside>
                 </div>
         <!-- ./wrapper -->
 
 
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <!-- jQuery 2.0.2 -->
 
@@ -341,6 +772,89 @@
         });
     })
 </script>
+
+    $('.weight_button').click(function(){
+
+        $('.weight').toggle();
+        if($(this).text() == 'W'){
+            $(this).text('Weight');
+        } else {
+            $(this).text('W');
+        }
+
+        $( ".weight" ).replaceWith( "<td></td>" );
+
+    });
+
+    $('.index_button').click(function(){
+
+        $('.index').toggle();
+        if($(this).text() == 'I'){
+            $(this).text('Index');
+        } else {
+            $(this).text('I');
+        }
+
+        $( ".index" ).replaceWith( "<td></td>" );
+
+    });
+
+</script>
+
+      <script>
+          $( ".menu_dashboard" ).click(function() {
+              $( ".submenu_dashboard" ).show();
+              $( ".submenu_plan" ).hide();
+              $( ".submenu_execute" ).hide();
+              $( ".submenu_assess" ).hide();
+              $( ".submenu_report" ).hide();
+
+          });
+
+
+          $( ".menu_plan" ).click(function() {
+              $( ".submenu_dashboard" ).hide();
+              $( ".submenu_plan" ).show();
+              $( ".submenu_execute" ).hide();
+              $( ".submenu_assess" ).hide();
+              $( ".submenu_report" ).hide();
+
+          });
+
+          $( ".menu_execute" ).click(function() {
+              $( ".submenu_dashboard" ).hide();
+              $( ".submenu_plan" ).hide();
+              $( ".submenu_execute" ).show();
+              $( ".submenu_assess" ).hide();
+              $( ".submenu_report" ).hide();
+
+          });
+
+          $( ".menu_assess" ).click(function() {
+              $( ".submenu_dashboard" ).hide();
+              $( ".submenu_plan" ).hide();
+              $( ".submenu_execute" ).hide();
+              $( ".submenu_assess" ).show();
+              $( ".submenu_report" ).hide();
+
+          });
+
+          $( ".menu_report" ).click(function() {
+              $( ".submenu_dashboard" ).hide();
+              $( ".submenu_plan" ).hide();
+              $( ".submenu_execute" ).hide();
+              $( ".submenu_assess" ).hide();
+              $( ".submenu_report" ).show();
+
+          });
+
+      </script>
+
+      <script>
+          $(".accordion > div").hide().parent().hover(function(event) {
+              $(this).children("div").slideToggle(event.type === "mouseenter");
+          });
+      </script>
 
 </body>
 </html>
