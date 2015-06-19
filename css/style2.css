@@ -1186,19 +1186,27 @@ color:#004071;}
     background-color: white;
     padding-top:20px;
     width:100%;
-    margin-top:15px;
+    height:500px;
+    margin:15px auto 20px auto;
 }
 
-.graphic img
-{border:1px solid white;
+.graphic-chart
+{   border:1px solid white;
     border-radius: 10px;
-padding:20px;
-background-color: white;
-float:left;
-margin:auto;
+    padding:20px;
+    background-color: white;
+    float:left;
+    margin:auto;
     z-index: 0;
     position: relative;
+
+    width:100%;
+
+
 }
+
+.graphic-chart img
+{margin:auto;}
 
 .graphic_text
 {border-bottom:solid 1px #aeaeae;
