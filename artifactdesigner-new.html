@@ -15,6 +15,8 @@
     <link href="css/style2.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/bs_leftnavi.css">
     <script src="js/bs_leftnavi.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css"/>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,7 +44,7 @@
             </div>
         </div>
         <ul class="main-nav">
-            <li ><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
+            <li><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
@@ -179,174 +181,494 @@
                 <div class="row">
 
                     <div class="title">Artifact Designer</div>
+                    <div class="description_year">New / Artifact Name</div>
 
                 </div>
-                <div class="row">
 
-                    <a href="#" class="text-button" data-toggle="offcanvas" role="button">
-                        <span class="fa fa-desktop"></span>
-                        Full Screen
-                    </a>
-                    <a href="#" class="text-button">
-                        <span class="fa fa-plus-circle"></span>
-                        New
-                    </a>
-                </div>
             </div>
+
+
             <div class="col-md-12">
-                <div class="row">
-                    <form class="form-inline form-templateeditor">
-                        <div class="form-group">
+                <div class="whitebox">
+                    <h2>Naming</h2>
 
-                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Search">
+                    <form class="form-inline">
 
+                        <div class="form-group form-list">
+                            <label>Graphic Type</label>
+                            <select for="GraphicType" class="form-control">
+                                <option>-</option>
+                                <option>Pie</option>
+                                <option>Column</option>
+                                <option>Line</option>
+                                <option>Area</option>
+                                <option>Speedometer</option>
+                                <option>Traffic Light</option>
+                                <option>Speedometer Half</option>
+                                <option>People</option>
+                                <option>Tank</option>
+                                <option>Tabular</option>
+                                <option>Cargo Tank</option>
+                                <option>Combination</option>
+                                <option>Double Axis</option>
+                                <option>Spider Web</option>
+                                <option>Accelerate</option>
+                                <option>Water Fall</option>
+                                <option>Bar</option>
+                                <option>Spider Web 2</option>
+                            </select>
                         </div>
-                        <a href="#" class="btn-darkblue"><span class="fa fa-search"></span>Search</a>
-                        <a href="#" class="btn-lightblue"><span class="fa fa-repeat"></span>Clear</a>
+
+                        <div class="form-group form-list">
+                            <label>Graphic Name</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+
+                        <div class="form-group form-list">
+                            <label>Header Title</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+
+                        <div class="form-group form-list">
+                            <label>Unit Measurement</label>
+                            <select for="GraphicType" class="form-control">
+                                <option value="1">tbtu</option>
+                                <option value="2">MMSCF</option>
+                                <option value="3">MT</option>
+                                <option value="4">%</option>
+                                <option value="5">days</option>
+                                <option value="6">Case</option>
+                                <option value="7">Cargo</option>
+                                <option value="8">USD(Mio)</option>
+                                <option value="9">Times</option>
+                                <option value="10">USD/mmbtu</option>
+                                <option value="11">Number</option>
+                                <option value="12">USD/pax</option>
+                                <option value="13">USD</option>
+                                <option value="14">Hour</option>
+                                <option value="15">MMSCFD</option>
+                                <option value="16">MMBBL</option>
+                                <option value="17">USD/bbl</option>
+                            </select>
+                        </div>
+
                     </form>
-                    <form class="form-inline" style="margin:5px 40px 0px 25px;padding-right:30px;">
-                        <div class="form-group">
-                            <label>Record / Page :</label>
+                </div>
+
+
+                <div class="whitebox">
+                    <h2>Time Period</h2>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Series Type</label>
                             <select class="form-control">
-                                <option>30</option>
-                                <option>45</option>
-                                <option>60</option>
+                                <option>-</option>
+                                <option>Hourly</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-list">
+
+                            <select class="form-control form-periode">
+                                <option>-</option>
+                                <option>Year To Date</option>
+                                <option>Current Year</option>
+                                <option>Current Month</option>
+                                <option>Current Day</option>
+                                <option>Current Hour</option>
+                                <option>Range</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-list">
+                            <form class="form-inline sandbox-form" id="sandbox">
+                                <div class="input-daterange input-group" id="datepicker">
+                                    <label>Range</label>
+                                    <input type="text" class="input-sm" name="start"/>
+                                    <span class="input-group-addon">to</span>
+                                    <input type="text" class="input-sm" name="end"/>
+                                </div>
+                            </form>
+                        </div>
+
+                </div>
+                </div>
+
+                <div class="col-md-12">
+                <div class="whitebox">
+                    <h2>Y Axis Spesification</h2>
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Value Axis</label>
+                            <select class="form-control">
+                                <option>KPI Target</option>
+                                <option>KPI Actual</option>
+                                <option>KPI Economic</option>
+                                <option>Unique Series</option>
 
                             </select>
                         </div>
-                        <a href="#" class="btn-lightblue"><span class="fa fa-refresh"></span>Refresh</a>
+
+
+                    </form>
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Fraction Scale</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Maximum Scale</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+
+
                     </form>
                 </div>
-            </div>
 
-                <div class="col-md-12">
-                    <table class="table table-hover table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th>No</th>
-                            <th style="width:40%;">Artifact Name</th>
-                            <th style="width:15%;">Graphic Type</th>
-                            <th style="width:30%;">Header Title</th>
-                            <th>Period Aggregation</th>
-                            <th style="width:12%;">Action</th>
+                <div class="whitebox">
+                    <h2>Stacking</h2>
 
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Stack</label>
+                            <select class="form-control">
+                                <option>Single Stack</option>
+                                <option>Multiple Stack</option>
 
-                            <td>1</td>
-                            <td>Plant Availabilty Graphic</td>
-                            <td>Coloumn</td>
-                            <td>2014 - 2007</td>
-                            <td>Yearly</td>
-                             <td class="text-button" style="margin:auto;">
-                                 <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                 <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                             </td>
-
-
-                        </tr>
-                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
-
-                            <td>2</td>
-                            <td>QHSE Tabular 2</td>
-                            <td>Tabular</td>
-                            <td>QHSE Performance</td>
-                            <td>Undefined</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>3</td>
-                            <td>QHSE Closure Action VS Near Miss</td>
-                            <td>Double Axis</td>
-                            <td>Closure Action VS Near Miss</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>4</td>
-                            <td>QHSE Training Attend</td>
-                            <td>Double Axis</td>
-                            <td>QHSE Training Attend</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>5</td>
-                            <td>QHSE Security Incident</td>
-                            <td>Speedometer</td>
-                            <td>QHSE Security Incident</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>6</td>
-                            <td>QHSE Spider 1</td>
-                            <td>Spider Web 2</td>
-                            <td>QHSE Lagging Indicator</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr class="greyrow">
-                            <td colspan="5"
-                                style="text-align: left;color:white;background-color:#3f454f!important;"></td>
-                            <td style="background-color:#3f454f;color:white;">Total Data 6 Data</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
+                            </select>
+                        </div>
+                    </form>
                 </div>
+
             </div>
-        </section>
+
+            <div class="col-md-12">
+                <div class="whitebox-full">
+                    <h2>Bar 1</h2>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Name 1</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Bar 1 Name">
+
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Stack 1</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Stack 1 Name">
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Select Data</label>
 
 
-    </aside>
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list form-padding">
+                            <label>KPI Name</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>KPI Name 1</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+
+                    <form class="form-inline">
+                        <div class="form-group form-list form-padding">
+                            <label>KPI Type</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="KPI Type">
+
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Color</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>ORANGE</option>
+                                <option>RED</option>
+                                <option>CORAL</option>
+                                <option>MAROON</option>
+                                <option>PINK</option>
+                                <option>BLUE</option>
+                                <option>CYAN</option>
+                                <option>GREEN</option>
+                                <option>YELLOW</option>
+                                <option>SILVER</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Type Chart</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Column</option>
+                                <option>Line</option>
+                                <option>Area</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Axis Chart</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Left</option>
+                                <option>Right</option>
+                            </select>
+                        </div>
+                    </form>
+
+            <div id="stack2">
+                <hr>
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Stack 2</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Stack 1 Name">
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Select Data</label>
+
+
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list form-padding">
+                            <label>KPI Name</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>KPI Name 1</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+
+                    <form class="form-inline">
+                        <div class="form-group form-list form-padding">
+                            <label>KPI Type</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="KPI Type">
+
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Color</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>ORANGE</option>
+                                <option>RED</option>
+                                <option>CORAL</option>
+                                <option>MAROON</option>
+                                <option>PINK</option>
+                                <option>BLUE</option>
+                                <option>CYAN</option>
+                                <option>GREEN</option>
+                                <option>YELLOW</option>
+                                <option>SILVER</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Type Chart</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Column</option>
+                                <option>Line</option>
+                                <option>Area</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Axis Chart</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Left</option>
+                                <option>Right</option>
+                            </select>
+                        </div>
+                    </form>
+                    </div>
+
+                </div>
+<div id="bar2">
+                <div class="whitebox-full">
+                    <h2>Bar 2</h2>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Name 1</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Bar 1 Name">
+
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Stack 1</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Stack 1 Name">
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Select Data</label>
+
+
+
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list form-padding">
+                            <label>KPI Name</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>KPI Name 1</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+
+                    <form class="form-inline">
+                        <div class="form-group form-list form-padding">
+                            <label>KPI Type</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="KPI Type">
+
+                        </div>
+
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Color</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>ORANGE</option>
+                                <option>RED</option>
+                                <option>CORAL</option>
+                                <option>MAROON</option>
+                                <option>PINK</option>
+                                <option>BLUE</option>
+                                <option>CYAN</option>
+                                <option>GREEN</option>
+                                <option>YELLOW</option>
+                                <option>SILVER</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Type Chart</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Column</option>
+                                <option>Line</option>
+                                <option>Area</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Axis Chart</label>
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Left</option>
+                                <option>Right</option>
+                            </select>
+                        </div>
+                    </form>
+
+</div>
+                <div class="col-md-12 centering margin border">
+                <a href="#" class="btn-lightblue btn-large">Add More Stack</a>
+                <a href="#" class="btn-lightblue btn-large">Add More Bar</a>
+
+                </div>
+
+
+
+                <div class="col-md-12 centering margin">
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-eye"></span>View</a>
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+                    <a href="artifactdesigner.html" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
+                </div>
+
+
+</div>
+</div>
+</section>
+
+
+</aside>
 </div>
 <!-- ./wrapper -->
 
@@ -562,8 +884,12 @@
             }
         });
     })
+
 </script>
 
+<script>
+    $('#sandbox-container .input-daterange').datepicker({});
+</script>
 
 </body>
 </html>

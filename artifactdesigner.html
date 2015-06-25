@@ -42,7 +42,7 @@
             </div>
         </div>
         <ul class="main-nav">
-            <li class="active"><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
+            <li ><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
@@ -149,7 +149,7 @@
                     <li><a href="#">KPI Test</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="menu_setting"><i class="fa fa-cog"></i><span>SETTING</span></a>
+            <li class="active"><a href="#" class="menu_setting"><i class="fa fa-cog"></i><span>SETTING</span></a>
                 <ul class="sub-nav">
 
                     <li><a href="production.html">Group Management</a></li>
@@ -157,7 +157,7 @@
                     <li><a href="production.html">Module</a></li>
                     <li><a href="production.html">Menu</a></li>
                     <li><a href="production.html">Audit Trail</a></li>
-                    <li><a href="production.html">Artifact Designer</a></li>
+                    <li><a href="artifactdesigner.html">Artifact Designer</a></li>
                     <li><a href="production.html">Log Out</a></li>
 
                 </ul>
@@ -178,7 +178,7 @@
             <div class="title_page" style="border:none!important;">
                 <div class="row">
 
-                    <div class="title">Template Editor</div>
+                    <div class="title">Artifact Designer</div>
 
                 </div>
                 <div class="row">
@@ -187,7 +187,7 @@
                         <span class="fa fa-desktop"></span>
                         Full Screen
                     </a>
-                    <a href="#" class="text-button">
+                    <a href="artifactdesigner-new.html" class="text-button">
                         <span class="fa fa-plus-circle"></span>
                         New
                     </a>
@@ -220,16 +220,15 @@
             </div>
 
                 <div class="col-md-12">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-hover table-striped table-bordered">
                         <thead>
                         <tr>
                             <th>No</th>
-                            <th style="width:20%;">Template</th>
-                            <th>Rows</th>
-                            <th style="width:30%;">Remarks</th>
-                            <th>Active</th>
-                            <th>Refresh Time</th>
-                            <th style="width:18%;">Action</th>
+                            <th style="width:40%;">Artifact Name</th>
+                            <th style="width:15%;">Graphic Type</th>
+                            <th style="width:30%;">Header Title</th>
+                            <th>Period Aggregation</th>
+                            <th style="width:12%;">Action</th>
 
                         </tr>
                         </thead>
@@ -237,77 +236,107 @@
                         <tr>
 
                             <td>1</td>
-                            <td>Economic Summary</td>
-                            <td>1</td>
-                            <td>-</td>
-                            <td>Yes</td>
-                            <td>1 Minute</td>
+                            <td>Plant Availabilty Graphic</td>
+                            <td>Coloumn</td>
+                            <td>2014 - 2007</td>
+                            <td>Yearly</td>
+                             <td class="text-button" style="margin:auto;">
+                                 <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                 <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                             </td>
+
+
+                        </tr>
+                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
+
+                            <td>2</td>
+                            <td>QHSE Tabular 2</td>
+                            <td>Tabular</td>
+                            <td>QHSE Performance</td>
+                            <td>Undefined</td>
                             <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
 
                             </td>
 
 
                         </tr>
+
                         <tr>
-                            <td>2</td>
-                            <td>PMS Summary</td>
-                            <td>1</td>
-                            <td>-</td>
-                            <td>Yes</td>
-                            <td>1 Minute</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
 
-                            </td>
-                        </tr>
-
-                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
                             <td>3</td>
-                            <td>Safety</td>
-                            <td>2</td>
-                            <td>-</td>
-                            <td>Yes</td>
-                            <td>1 Minute</td>
+                            <td>QHSE Closure Action VS Near Miss</td>
+                            <td>Double Axis</td>
+                            <td>Closure Action VS Near Miss</td>
+                            <td>Monthly</td>
                             <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
 
                             </td>
+
+
                         </tr>
 
-                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
+                        <tr>
+
                             <td>4</td>
-                            <td>Template Baru</td>
-                            <td>2</td>
-                            <td>ss</td>
-                            <td>Yes</td>
-                            <td>30 Minute</td>
+                            <td>QHSE Training Attend</td>
+                            <td>Double Axis</td>
+                            <td>QHSE Training Attend</td>
+                            <td>Monthly</td>
                             <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
 
                             </td>
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>5</td>
+                            <td>QHSE Security Incident</td>
+                            <td>Speedometer</td>
+                            <td>QHSE Security Incident</td>
+                            <td>Monthly</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>6</td>
+                            <td>QHSE Spider 1</td>
+                            <td>Spider Web 2</td>
+                            <td>QHSE Lagging Indicator</td>
+                            <td>Monthly</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                            </td>
+
+
                         </tr>
 
                         <tr class="greyrow">
-                            <td colspan="6"
+                            <td colspan="5"
                                 style="text-align: left;color:white;background-color:#3f454f!important;"></td>
-                            <td style="background-color:#3f454f;color:white;">Total Data 4 Data</td>
+                            <td style="background-color:#3f454f;color:white;">Total Data 6 Data</td>
                         </tr>
 
                         </tbody>
