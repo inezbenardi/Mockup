@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PEAR | Dashboard</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
+
+    <!-- bootstrap 3.0.2 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Theme style -->
+    <link href="css/style2.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/bs_leftnavi.css">
+    <script src="js/bs_leftnavi.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<!-- header logo: style can be found in header.less -->
+<div class="main-content">
+    <aside class="left-content">
+
+        <div class="logo">
+            <div class="pear">
+                <img src="css/img/logopear.png"/>
+            </div>
+            <!--
+                  -->
+            <div class="donggi">
+                <img src="css/img/logo_blue.png"/>
+            </div>
+        </div>
+        <ul class="main-nav">
+            <li ><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
+                <ul class="sub-nav">
+                    <li>
+                        <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
+                        <ul class="sublevel">
+                            <li><a href="production.html">Productivity & Efficiency</a></li>
+                            <li><a href="financial.html">Financial Strength</a></li>
+                            <li><a href="stakeholder.html">Stakeholder Responsible</a></li>
+                            <li><a href="safety.html">Safety</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Directorate Performance</a><br/>
+
+                    </li>
+                    <li>
+                        <a href="#">Function Performance<span class="fa fa-angle-down"></span></a>
+                        <ul class="sublevel">
+                            <li><a href="#">QHSE</a></li>
+                            <li><a href="#">HCD</a></li>
+                            <li><a href="#">Procurement</a></li>
+                            <li><a href="#">Maintance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Economic Summary</a><br/></li>
+                    <li><a href="#">Summary KO</a><br/></li>
+                    <li><a href="#">Economic Summary</a><br/></li>
+                    <li><a href="index2.html">PMS Summary</a><br/></li>
+                    <li>
+                        <a href="#">Configuration Setting<span class="fa fa-angle-down"></span></a>
+                        <ul class="sublevel">
+                            <li><a href="#">Template</a></li>
+                            <li><a href="templateeditor.html">Template Editor</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="#" class="menu_plan"><i class="fa fa-calendar"></i><span>PLAN</span></a>
+                <ul class="sub-nav">
+                    <li>
+                        <a href="#">Business Indicator<span class="fa fa-angle-down"></span></a><br/>
+                        <ul class="sublevel">
+                            <li><a href="#"> Period</a></li>
+                            <li><a href="#"> Type</a></li>
+                            <li><a href="#"> Method</a></li>
+                            <li><a href="#"> Conversion</a></li>
+                            <li><a href="#"> Level</a></li>
+                            <li><a href="#"> Pilar</a></li>
+                            <li><a href="#"> Measurement</a></li>
+                            <li><a href="#"> Group</a></li>
+                            <li><a href="#"> Activity</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Performance Setting<span class="fa fa-angle-down"></span></a><br/>
+                        <ul class="sublevel">
+                            <li><a href="#"> Period</a></li>
+                            <li><a href="#"> Type</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Plan Resource</a></li>
+                    <li><a href="#">Project Setting</a></li>
+                    <li>
+                        <a href="#">Economic Model<span class="fa fa-angle-down"></span></a><br/>
+                        <ul class="sublevel">
+                            <li><a href="#"> Configuration</a></li>
+                            <li><a href="#"> Key Assumption Configuration</a></li>
+                            <li><a href="#"> Operation Data Configuration</a></li>
+                            <li><a href="#"> Key Output Configuration</a></li>
+                            <li><a href="#"> Key Output Template</a></li>
+                            <li><a href="#"> Master</a></li>
+                            <li><a href="#"> Operation Data Category</a></li>
+                            <li><a href="#"> Key Assumption Stage</a></li>
+                            <li><a href="#"> Key Assumption Category</a></li>
+                            <li><a href="#"> Key Output Category</a></li>
+                            <li><a href="#"> Scenario List</a></li>
+                            <li><a href="#"> EM Summary</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu_execute"><i class="fa fa-gavel"></i><span>EXECUTE</span></a>
+                <ul class="sub-nav">
+                    <li><a href="#">KPI Achievement</a></li>
+                    <li><a href="#">Actual Resource</a></li>
+                    <li><a href="#">Project Progress</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#" class="menu_assess"><i class="fa fa-edit"></i><span>ASSESS</span></a>
+                <ul class="sub-nav">
+                    <li><a href="#">Project Impact</a></li>
+                    <li><a href="#">Resource Utitlization</a></li>
+                    <li><a href="#">Economic Review</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu_report"><i class="fa fa-bar-chart-o"></i><span>REPORT</span></a>
+                <ul class="sub-nav">
+                    <li><a href="#">Daily Execution Report</a></li>
+                    <li><a href="#">Management Information Report</a></li>
+                    <li><a href="#">KPI Test</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#" class="menu_setting"><i class="fa fa-cog"></i><span>SETTING</span></a>
+                <ul class="sub-nav">
+
+                    <li><a href="production.html">Group Management</a></li>
+                    <li><a href="production.html">User</a></li>
+                    <li><a href="production.html">Module</a></li>
+                    <li><a href="production.html">Menu</a></li>
+                    <li><a href="production.html">Audit Trail</a></li>
+                    <li><a href="artifactdesigner.html">Artifact Designer</a></li>
+                    <li><a href="production.html">Log Out</a></li>
+
+                </ul>
+            </li>
+        </ul>
+        <div class="left-content-toggle">
+            <i class="fa fa-caret-left"></i>
+            <i style="display: none" class="fa fa-caret-right"></i>
+        </div>
+    </aside>
+
+
+    <aside class="right-content">
+
+
+        <section>
+
+            <div class="title_page" style="border:none!important;">
+                <div class="row">
+
+                    <div class="title">Artifact Designer</div>
+
+                </div>
+                <div class="row">
+
+                    <a href="#" class="text-button" data-toggle="offcanvas" role="button">
+                        <span class="fa fa-desktop"></span>
+                        Full Screen
+                    </a>
+                    <a href="#" class="text-button">
+                        <span class="fa fa-plus-circle"></span>
+                        New
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <form class="form-inline form-templateeditor">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Search">
+
+                        </div>
+                        <a href="#" class="btn-darkblue"><span class="fa fa-search"></span>Search</a>
+                        <a href="#" class="btn-lightblue"><span class="fa fa-repeat"></span>Clear</a>
+                    </form>
+                    <form class="form-inline" style="margin:5px 40px 0px 25px;padding-right:30px;">
+                        <div class="form-group">
+                            <label>Record / Page :</label>
+                            <select class="form-control">
+                                <option>30</option>
+                                <option>45</option>
+                                <option>60</option>
+
+                            </select>
+                        </div>
+                        <a href="#" class="btn-lightblue"><span class="fa fa-refresh"></span>Refresh</a>
+                    </form>
+                </div>
+            </div>
+
+                <div class="col-md-12">
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <th>No</th>
+                            <th style="width:40%;">Artifact Name</th>
+                            <th style="width:15%;">Graphic Type</th>
+                            <th style="width:30%;">Header Title</th>
+                            <th>Period Aggregation</th>
+                            <th style="width:12%;">Action</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td>1</td>
+                            <td>Plant Availabilty Graphic</td>
+                            <td>Coloumn</td>
+                            <td>2014 - 2007</td>
+                            <td>Yearly</td>
+                             <td class="text-button" style="margin:auto;">
+                                 <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                 <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                             </td>
+
+
+                        </tr>
+                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
+
+                            <td>2</td>
+                            <td>QHSE Tabular 2</td>
+                            <td>Tabular</td>
+                            <td>QHSE Performance</td>
+                            <td>Undefined</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>3</td>
+                            <td>QHSE Closure Action VS Near Miss</td>
+                            <td>Double Axis</td>
+                            <td>Closure Action VS Near Miss</td>
+                            <td>Monthly</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>4</td>
+                            <td>QHSE Training Attend</td>
+                            <td>Double Axis</td>
+                            <td>QHSE Training Attend</td>
+                            <td>Monthly</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>5</td>
+                            <td>QHSE Security Incident</td>
+                            <td>Speedometer</td>
+                            <td>QHSE Security Incident</td>
+                            <td>Monthly</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>6</td>
+                            <td>QHSE Spider 1</td>
+                            <td>Spider Web 2</td>
+                            <td>QHSE Lagging Indicator</td>
+                            <td>Monthly</td>
+                            <td class="text-button" style="margin:auto;">
+                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
+                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr class="greyrow">
+                            <td colspan="5"
+                                style="text-align: left;color:white;background-color:#3f454f!important;"></td>
+                            <td style="background-color:#3f454f;color:white;">Total Data 6 Data</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+    </aside>
+</div>
+<!-- ./wrapper -->
+
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="ModalViewTemplate" tabindex="-1" role="dialog"
+     aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="title">Economic Summary</div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>Record / Page :</label>
+                        <input type="text" class="form-control" placeholder="Jane Doe">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="ModalViewTemplate2" tabindex="-1" role="dialog"
+     aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="title">Economic Summary</div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Refresh Time</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Remark</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Activated</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                </form>
+                </form>
+                <a href="#" class="btn-darkblue" data-dismiss="modal"><span class="fa fa-search"></span>Save</a>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery 2.0.2 -->
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<!-- jQuery UI 1.10.3 -->
+<script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<!-- daterangepicker -->
+<script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+
+<script src="js/plugins/chart.js" type="text/javascript"></script>
+
+<!-- datepicker
+<script src="js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>-->
+<!-- Bootstrap WYSIHTML5
+<script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>-->
+<!-- iCheck -->
+<script src="js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+<!-- calendar -->
+<script src="js/plugins/fullcalendar/fullcalendar.js" type="text/javascript"></script>
+
+<!-- Director App -->
+<script src="js/Director/app.js" type="text/javascript"></script>
+
+<!-- Director dashboard demo (This is only for demo purposes) -->
+<script src="js/Director/dashboard.js" type="text/javascript"></script>
+
+<!-- Director for demo purposes -->
+<script type="text/javascript">
+    $('input').on('ifChecked', function (event) {
+        // var element = $(this).parent().find('input:checkbox:first');
+        // element.parent().parent().parent().addClass('highlight');
+        $(this).parents('li').addClass("task-done");
+        console.log('ok');
+    });
+    $('input').on('ifUnchecked', function (event) {
+        // var element = $(this).parent().find('input:checkbox:first');
+        // element.parent().parent().parent().removeClass('highlight');
+        $(this).parents('li').removeClass("task-done");
+        console.log('not');
+    });
+
+</script>
+<script>
+    $('#noti-box').slimScroll({
+        height: '400px',
+        size: '5px',
+        BorderRadius: '5px'
+    });
+
+    $('input[type="checkbox"].flat-grey, input[type="radio"].flat-grey').iCheck({
+        checkboxClass: 'icheckbox_flat-grey',
+        radioClass: 'iradio_flat-grey'
+    });
+</script>
+
+
+<script>
+
+    $('.unit_button').click(function () {
+
+        $('.unit').toggle();
+        if ($(this).text() == 'U') {
+            $(this).text('Unit');
+        } else {
+            $(this).text('U');
+        }
+
+        $(".unit").replaceWith("<td></td>");
+
+
+    });
+
+
+    $('.weight_button').click(function () {
+
+        $('.weight').toggle();
+        if ($(this).text() == 'W') {
+            $(this).text('Weight');
+        } else {
+            $(this).text('W');
+        }
+
+        $(".weight").replaceWith("<td></td>");
+
+    });
+
+    $('.index_button').click(function () {
+
+        $('.index').toggle();
+        if ($(this).text() == 'I') {
+            $(this).text('Index');
+        } else {
+            $(this).text('I');
+        }
+
+        $(".index").replaceWith("<td></td>");
+
+    });
+
+</script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.sub-nav > li').hover(function () {
+            var $this = $(this);
+            $this.find('ul').stop().slideToggle();
+        })
+        $('.main-nav > li').click(function () {
+            $('.main-nav > li.active').removeClass('active');
+            $(this).addClass('active');
+        })
+        $('.left-content-toggle').click(function () {
+            $(this).find('i').toggle();
+            var $leftContent = $('.left-content');
+            if (!$leftContent.hasClass('pear-hidden')) {
+
+                $('.main-content').animate({
+                    marginLeft: -230
+                }, function () {
+                    $leftContent.addClass('pear-hidden');
+                })
+            } else {
+                $('.main-content').animate({
+                    marginLeft: 0
+                }, function () {
+                    $leftContent.removeClass('pear-hidden');
+                })
+            }
+        });
+    })
+</script>
+
+
+</body>
+</html>
