@@ -14,16 +14,18 @@
     <!-- Theme style -->
     <link href="css/style2.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/bs_leftnavi.css">
+
     <script src="js/bs_leftnavi.js"></script>
+
     <script src="js/bootstrap-datepicker.js"></script>
-    <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
     <![endif]-->
 
 
@@ -181,7 +183,7 @@
                 <div class="row">
 
                     <div class="title">Artifact Designer</div>
-                    <div class="description_year">New / Artifact Name</div>
+                    <div class="description_year">New</div>
 
                 </div>
 
@@ -271,7 +273,7 @@
                                 <option>Yearly</option>
                             </select>
 
-                            <select class="form-control form-list">
+                            <select class="form-control">
                                 <option>-</option>
                                 <option>Year To Date</option>
                                 <option>Current Year</option>
@@ -283,18 +285,16 @@
                         </div>
                     </form>
 
-                    <form class="form-inline">
-                        <div class="form-group form-list">
-                            <form class="form-inline sandbox-form" id="sandbox">
-                                <div class="input-daterange input-group" id="datepicker">
-                                    <label>Range</label>
-                                    <input type="text" class="input-sm" name="start"/>
-                                    <span class="input-group-addon">to</span>
-                                    <input type="text" class="input-sm" name="end"/>
-                                </div>
-                            </form>
-                        </div>
-                    </form>
+
+                    <div class="input-daterange input-group form-group" id="datepicker range">
+                        <label>Range</label>
+                        <input type="text" class="input-sm form-control" name="start" />
+                        -
+                        <input type="text" class="input-sm form-control" name="end" />
+                    </div>
+
+
+
                     <form class="form-inline">
 
                         <div class="form-group form-list">
@@ -335,7 +335,7 @@
                             <option>Multiple Stack</option>
 
                         </select>
-                        <a href="#" class="btn-lightblue">Add Series</a>
+                        <a href="#" class="btn-lightblue" href="javascript:void(0);" onclick="showSeries();" >Add Series</a>
                     </div>
                 </form>
 
@@ -346,28 +346,30 @@
 
 
 
-            <div class="col-md-12" id="series1">
+            <div class="col-md-12" id="series1" style="display:none;">
                 <div class="whitebox-full">
+
                     <h2>Series</h2>
+                    <button type="button" class="close" onclick="hideSeries();"><span aria-hidden="true">×</span></button>
 
                     <form class="form-inline">
                         <div class="form-group form-list">
-                            <label>Lable 1</label>
+                            <label>Lable</label>
                             <input type="text" class="form-control" id="exampleInputName2" placeholder="Label">
-                            <a href="#" class="btn-lightblue">Add Stack</a>
+                            <a href="#" href="javascript:void(0);" onclick="showStack();" class="btn-lightblue">Add Stack</a>
                         </div>
 
                     </form>
 
 
 
-                    <div class="stack" id="stack1">
+                    <div class="stack" id="stack1" style="display:none;">
                     <hr>
                     <h2>Stack</h2>
-
+                        <button type="button" class="close" onclick="hideStack();"><span aria-hidden="true">×</span></button>
                     <form class="form-inline">
                         <div class="form-group form-list">
-                            <label>Lable 1</label>
+                            <label>Lable</label>
                             <input type="text" class="form-control" id="exampleInputName2" placeholder="Label">
 
                         </div>
@@ -392,13 +394,13 @@
 
                     </div>
 
-                    <div class="stack" id="stack1">
+                    <div class="stack" id="stack2" style="display:none;">
                         <hr>
                         <h2>Stack</h2>
 
                         <form class="form-inline">
                             <div class="form-group form-list">
-                                <label>Lable 1</label>
+                                <label>Lable</label>
                                 <input type="text" class="form-control" id="exampleInputName2" placeholder="Label">
 
                             </div>
@@ -425,13 +427,13 @@
 
                 </div>
 </div>
-                <div class="col-md-12" id="series1">
+                <div class="col-md-12" id="series2" style="display:none;">
                     <div class="whitebox-full">
                         <h2>Series </h2>
 
                         <form class="form-inline">
                             <div class="form-group form-list">
-                                <label>Lable 1</label>
+                                <label>Lable</label>
                                 <input type="text" class="form-control" id="exampleInputName2" placeholder="Label">
                                 <a href="#" class="btn-lightblue">Add Stack</a>
                             </div>
@@ -444,9 +446,9 @@
 
 
 <div class="col-md-12 centering margin">
-    <hr>
+    <hr style="margin-bottom:60px;">
     <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
-    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-eye"></span>View</a>
+    <a href="#" data-toggle="modal" data-target="#ModalViewArtifact" class="btn-darkblue btn-large"><span class="fa fa-eye"></span>View</a>
     <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
     <a href="artifactdesigner.html" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
 </div>
@@ -462,81 +464,44 @@
 
 
 <!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="ModalViewTemplate" tabindex="-1" role="dialog"
-     aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
+<div class="modal fade bs-example-modal-lg" id="ModalViewArtifact" tabindex="-1" role="dialog"
+     aria-labelledby="ModalViewArtifact" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <div class="row">
-                    <div class="title">Economic Summary</div>
+                <div class="row centering">
+                    <div class="title">2014 - 2007</div>
+                    <div class="description_year">Yearly Range 2014 - 2007</div>
                 </div>
 
             </div>
             <div class="modal-body">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label>Record / Page :</label>
-                        <input type="text" class="form-control" placeholder="Jane Doe">
-                    </div>
-
-                </form>
+                <div class="btn-group btn-more">
+                    <button type="button" class="dropdown-toggle icon_more" data-toggle="dropdown"
+                            aria-expanded="false">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="fa fa-print"></span>Print Chart</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-bar-chart-o"></span>View Tabular</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-file-image-o"></span>Download PNG Image</a></li>
+                        <li><a href="#"><span class="fa fa-file-image-o"></span>Download JPEG Image</a></li>
+                        <li><a href="#"><span class="fa fa-file-pdf-o"></span>Download PDF Document</a></li>
+                        <li><a href="#"><span class="fa fa-file-text-o"></span>Download SVG Vector Image</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_tab centering"><img src="css/img/graphic10.PNG"/></div>
 
             </div>
 
         </div>
     </div>
 </div>
-
-<!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="ModalViewTemplate2" tabindex="-1" role="dialog"
-     aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <div class="row">
-                    <div class="title">Economic Summary</div>
-                </div>
-
-            </div>
-            <div class="modal-body">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                    </div>
-                </form>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Refresh Time</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                    </div>
-                </form>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Remark</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                    </div>
-                </form>
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Activated</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                    </div>
-                </form>
-                </form>
-                <a href="#" class="btn-darkblue" data-dismiss="modal"><span class="fa fa-search"></span>Save</a>
-
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
 
 <!-- jQuery 2.0.2 -->
 
@@ -674,10 +639,38 @@
     })
 
 </script>
+<script>
+    $('#sandbox-container .input-daterange').datepicker({
+    });
+</script>
 
 <script>
-    $('#sandbox-container .input-daterange').datepicker({});
+function showSeries(){
+$('#series1').show();
+
+}
 </script>
+
+
+<script>
+    function showStack(){
+        $('#stack1').show();
+
+    }
+</script>
+
+<script>
+    function hideSeries(){
+        $('#series1').hide();
+    }
+
+    function hideStack(){
+        $('#stack1').hide();
+
+    }
+</script>
+
+
 
 </body>
 </html>

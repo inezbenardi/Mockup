@@ -229,7 +229,7 @@
                             <th style="width:30%;">Remarks</th>
                             <th>Active</th>
                             <th>Refresh Time</th>
-                            <th style="width:18%;">Action</th>
+                            <th style="width:12%;">Action</th>
 
                         </tr>
                         </thead>
@@ -243,9 +243,8 @@
                             <td>Yes</td>
                             <td>1 Minute</td>
                             <td class="text-button" style="margin:auto;">
+
                                 <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
                                         class="fa fa-pencil-square-o"></span>Edit</a>
                                 <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
 
@@ -261,9 +260,8 @@
                             <td>Yes</td>
                             <td>1 Minute</td>
                             <td class="text-button" style="margin:auto;">
+
                                 <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
                                         class="fa fa-pencil-square-o"></span>Edit</a>
                                 <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
 
@@ -278,9 +276,8 @@
                             <td>Yes</td>
                             <td>1 Minute</td>
                             <td class="text-button" style="margin:auto;">
+
                                 <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
                                         class="fa fa-pencil-square-o"></span>Edit</a>
                                 <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
 
@@ -295,9 +292,8 @@
                             <td>Yes</td>
                             <td>30 Minute</td>
                             <td class="text-button" style="margin:auto;">
+
                                 <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-eye"></span>View</a>
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate2"><span
                                         class="fa fa-pencil-square-o"></span>Edit</a>
                                 <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
 
@@ -330,66 +326,66 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <div class="row">
-                    <div class="title">Economic Summary</div>
-                </div>
+
 
             </div>
             <div class="modal-body">
                 <form class="form-inline">
-                    <div class="form-group">
-                        <label>Record / Page :</label>
-                        <input type="text" class="form-control" placeholder="Jane Doe">
-                    </div>
-
-                </form>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="ModalViewTemplate2" tabindex="-1" role="dialog"
-     aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <div class="row">
-                    <div class="title">Economic Summary</div>
+                <div class="form-group">
+                    <label>Template Name :</label>
+                    <input type="text" class="form-control2" placeholder="Safety">
                 </div>
+                </form>
 
-            </div>
-            <div class="modal-body">
                 <form class="form-inline">
                     <div class="form-group">
-                        <label for="exampleInputName2">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        <label>Dashboard Selection :</label>
+                        <input type="text" class="form-control2" placeholder="">
+                        <input type="text" class="form-control2 form-padding" placeholder="">
+                    </div>
+                    <div class="form-padding" style="margin-bottom:20px;">
+                    <a href="#" class="btn-lightblue" >Add More</a>
+                    <a href="#" class="btn-lightblue" >Print</a>
                     </div>
                 </form>
+
                 <form class="form-inline">
                     <div class="form-group">
-                        <label for="exampleInputName2">Refresh Time</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        <label>Refresh Time :</label>
+                        <input type="text" class="form-control2" style="width:45px;" placeholder="1">Minute
                     </div>
                 </form>
+
                 <form class="form-inline">
                     <div class="form-group">
-                        <label for="exampleInputName2">Remark</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        <label>Remark :</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
                     </div>
                 </form>
+
                 <form class="form-inline">
                     <div class="form-group">
-                        <label for="exampleInputName2">Activated</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        <label>Activate :</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                No
+                            </label>
+                        </div>
                     </div>
                 </form>
-                </form>
-                <a href="#" class="btn-darkblue" data-dismiss="modal"><span class="fa fa-search"></span>Save</a>
+
+                <div class="centering margin">
+                    <hr style="margin-bottom:60px;">
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+                     <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+                    <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
 
 
             </div>

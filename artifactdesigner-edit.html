@@ -14,14 +14,18 @@
     <!-- Theme style -->
     <link href="css/style2.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/bs_leftnavi.css">
+
     <script src="js/bs_leftnavi.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
     <![endif]-->
 
 
@@ -42,7 +46,7 @@
             </div>
         </div>
         <ul class="main-nav">
-            <li ><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
+            <li><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
@@ -177,184 +181,286 @@
 
             <div class="title_page" style="border:none!important;">
                 <div class="row">
-
                     <div class="title">Artifact Designer</div>
+                    <div class="description_year">2014 - 2007</div>
 
                 </div>
-                <div class="row">
 
-                    <a href="#" class="text-button" data-toggle="offcanvas" role="button">
-                        <span class="fa fa-desktop"></span>
-                        Full Screen
-                    </a>
-                    <a href="artifactdesigner-new.html" class="text-button">
-                        <span class="fa fa-plus-circle"></span>
-                        New
-                    </a>
-                </div>
             </div>
+
+
             <div class="col-md-12">
-                <div class="row">
-                    <form class="form-inline form-templateeditor">
-                        <div class="form-group">
+                <div class="whitebox">
+                    <h2>Graphic Type</h2>
 
-                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Search">
+                    <form class="form-inline">
 
+                        <div class="form-group form-list">
+                            <label>Graphic Type</label>
+                            <select for="GraphicType" class="form-control">
+                                <option>-</option>
+                                <option>Pie</option>
+                                <option selected>Column</option>
+                                <option>Line</option>
+                                <option>Area</option>
+                                <option>Speedometer</option>
+                                <option>Traffic Light</option>
+                                <option>Speedometer Half</option>
+                                <option>People</option>
+                                <option>Tank</option>
+                                <option>Tabular</option>
+                                <option>Cargo Tank</option>
+                                <option>Combination</option>
+                                <option>Double Axis</option>
+                                <option>Spider Web</option>
+                                <option>Accelerate</option>
+                                <option>Water Fall</option>
+                                <option>Bar</option>
+                                <option>Spider Web 2</option>
+                            </select>
                         </div>
-                        <a href="#" class="btn-darkblue"><span class="fa fa-search"></span>Search</a>
-                        <a href="#" class="btn-lightblue"><span class="fa fa-repeat"></span>Clear</a>
+
+                        <div class="form-group form-list">
+                            <label>Graphic Name</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Plant Availability Graphic">
+                        </div>
+
+                        <div class="form-group form-list">
+                            <label>Header Title</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="2014 - 2007">
+                        </div>
+
+                        <div class="form-group form-list">
+                            <label>Unit Measurement</label>
+                            <select for="GraphicType" class="form-control">
+                                <option value="1">tbtu</option>
+                                <option value="2">MMSCF</option>
+                                <option value="3">MT</option>
+                                <option value="4">%</option>
+                                <option value="5">days</option>
+                                <option value="6" selected>Case</option>
+                                <option value="7">Cargo</option>
+                                <option value="8">USD(Mio)</option>
+                                <option value="9">Times</option>
+                                <option value="10">USD/mmbtu</option>
+                                <option value="11">Number</option>
+                                <option value="12">USD/pax</option>
+                                <option value="13">USD</option>
+                                <option value="14">Hour</option>
+                                <option value="15">MMSCFD</option>
+                                <option value="16">MMBBL</option>
+                                <option value="17">USD/bbl</option>
+                            </select>
+                        </div>
+
                     </form>
-                    <form class="form-inline" style="margin:5px 40px 0px 25px;padding-right:30px;">
-                        <div class="form-group">
-                            <label>Record / Page :</label>
+                </div>
+
+
+                <div class="whitebox">
+                    <h2>Graphic Setting</h2>
+
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Period Type</label>
                             <select class="form-control">
-                                <option>30</option>
-                                <option>45</option>
-                                <option>60</option>
+                                <option>-</option>
+                                <option>Hourly</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option selected>Yearly</option>
+                            </select>
+
+                            <select class="form-control">
+                                <option>-</option>
+                                <option>Year To Date</option>
+                                <option>Current Year</option>
+                                <option>Current Month</option>
+                                <option>Current Day</option>
+                                <option>Current Hour</option>
+                                <option selected>Range</option>
+                            </select>
+                        </div>
+                    </form>
+
+
+                    <div class="input-daterange input-group form-group" id="datepicker range">
+                        <label>Range</label>
+                        <input type="text" class="input-sm form-control" name="start" placeholder="2014">
+                        -
+                        <input type="text" class="input-sm form-control" name="end" placeholder="2007">
+                    </div>
+
+
+
+                    <form class="form-inline">
+
+                        <div class="form-group form-list">
+                            <label>Value Axis</label>
+                            <select class="form-control">
+                                <option selected>KPI Target</option>
+                                <option>KPI Actual</option>
+                                <option>KPI Economic</option>
+                                <option>Unique Series</option>
 
                             </select>
                         </div>
-                        <a href="#" class="btn-lightblue"><span class="fa fa-refresh"></span>Refresh</a>
                     </form>
+
+                    <form class="form-inline">
+
+                        <div class="form-group form-list">
+                            <label>Fraction Scale</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="10">
+                        </div>
+                    </form>
+
+                    <form class="form-inline">
+
+                        <div class="form-group form-list">
+                            <label>Maximum Value</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="100">
+                        </div>
+                    </form>
+
+
+
+                <form class="form-inline">
+                    <div class="form-group form-list">
+                        <label>Stack</label>
+                        <select class="form-control">
+                            <option>Single Stack</option>
+                            <option>Multiple Stack</option>
+
+                        </select>
+                        <a href="#" class="btn-lightblue" href="javascript:void(0);" onclick="showSeries();" >Add Series</a>
+                    </div>
+                </form>
+
                 </div>
             </div>
 
-                <div class="col-md-12">
-                    <table class="table table-hover table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th>No</th>
-                            <th style="width:40%;">Artifact Name</th>
-                            <th style="width:12%;">Graphic Type</th>
-                            <th style="width:30%;">Header Title</th>
-                            <th>Period Aggregation</th>
-                            <th style="width:20%;">Action</th>
-
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-
-                            <td>1</td>
-                            <td>Plant Availabilty Graphic</td>
-                            <td>Coloumn</td>
-                            <td>2014 - 2007</td>
-                            <td>Yearly</td>
-                             <td class="text-button" style="margin:auto;">
-                                 <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                 <a href="artifactdesigner-edit.html"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                 <a href="#"><span class="fa fa-times"></span>Delete</a>
 
 
-                             </td>
 
 
-                        </tr>
-                        <tr>
+            <div class="col-md-12" id="series1" >
+                <div class="whitebox-full">
 
-                            <td>2</td>
-                            <td>QHSE Tabular 2</td>
-                            <td>Tabular</td>
-                            <td>QHSE Performance</td>
-                            <td>Undefined</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+                    <h2>Series</h2>
+                    <button type="button" class="close" onclick="hideSeries1();"><span aria-hidden="true">×</span></button>
 
-                            </td>
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Lable</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Sale 1">
+                            <a href="#" href="javascript:void(0);" onclick="showStack();" class="btn-lightblue">Add Stack</a>
+                        </div>
 
-
-                        </tr>
-
-                        <tr>
-
-                            <td>3</td>
-                            <td>QHSE Closure Action VS Near Miss</td>
-                            <td>Double Axis</td>
-                            <td>Closure Action VS Near Miss</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+                    </form>
 
 
-                            </td>
+
+                    <div class="stack" id="stack1" >
+                    <hr>
+                    <h2>Stack</h2>
+                        <button type="button" class="close" onclick="hideStack1();"><span aria-hidden="true">×</span></button>
+                    <form class="form-inline">
+                        <div class="form-group form-list">
+                            <label>Lable</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="stack1a">
+
+                        </div>
+
+                    </form>
+
+                        <form class="form-inline">
+                            <div class="form-group form-list">
+                                <label>KPI id</label>
+                                <select class="form-control">
+                                    <option>Fatality / Strap Disability</option>
+                                    <option>QHSE Training Attend</option>
+                                    <option>RIF</option>
 
 
-                        </tr>
+                                </select>
 
-                        <tr>
+                            </div>
 
-                            <td>4</td>
-                            <td>QHSE Training Attend</td>
-                            <td>Double Axis</td>
-                            <td>QHSE Training Attend</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+                        </form>
 
 
-                            </td>
+                    </div>
+
+                    <div class="stack" id="stack2" >
+                        <hr>
+                        <h2>Stack</h2>
+                        <button type="button" class="close" onclick="hideStack2();"><span aria-hidden="true">×</span></button>
+                        <form class="form-inline">
+                            <div class="form-group form-list">
+                                <label>Lable</label>
+                                <input type="text" class="form-control" id="exampleInputName2" placeholder="stack1b">
+
+                            </div>
+
+                        </form>
+
+                        <form class="form-inline">
+                            <div class="form-group form-list">
+                                <label>KPI id</label>
+                                <select class="form-control">
+                                    <option>Fatality / Strap Disability</option>
+                                    <option selected>QHSE Training Attend</option>
+                                    <option>RIF</option>
 
 
-                        </tr>
+                                </select>
 
-                        <tr>
+                            </div>
 
-                            <td>5</td>
-                            <td>QHSE Security Incident</td>
-                            <td>Speedometer</td>
-                            <td>QHSE Security Incident</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
+                        </form>
 
 
-                            </td>
+                    </div>
 
-
-                        </tr>
-
-                        <tr>
-
-                            <td>6</td>
-                            <td>QHSE Spider 1</td>
-                            <td>Spider Web 2</td>
-                            <td>QHSE Lagging Indicator</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"  data-toggle="modal" data-target="#ModalViewTemplate"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr class="greyrow">
-                            <td colspan="5"
-                                style="text-align: left;color:white;background-color:#3f454f!important;"></td>
-                            <td style="background-color:#3f454f;color:white;">Total Data 6 Data</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
                 </div>
-            </div>
+</div>
+                <div class="col-md-12" id="series2" >
+                    <div class="whitebox-full">
+                        <h2>Series </h2>
+                        <button type="button" class="close" onclick="hideSeries2();"><span aria-hidden="true">×</span></button>
+                        <form class="form-inline">
+                            <div class="form-group form-list">
+                                <label>Lable</label>
+                                <input type="text" class="form-control" id="exampleInputName2" placeholder="Sale 2">
+                                <a href="#" class="btn-lightblue">Add Stack</a>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    </div>
+
+
+<div class="col-md-12 centering margin">
+    <hr style="margin-bottom:60px;">
+    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+    <a href="#" data-toggle="modal" data-target="#ModalViewArtifact" class="btn-darkblue btn-large"><span class="fa fa-eye"></span>View</a>
+    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+    <a href="artifactdesigner.html" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
+</div>
+
+
+</div>
         </section>
 
 
     </aside>
 </div>
 <!-- ./wrapper -->
+
 
 <!-- Modal -->
 <div class="modal fade bs-example-modal-lg" id="ModalViewArtifact" tabindex="-1" role="dialog"
@@ -530,7 +636,33 @@
             }
         });
     })
+
 </script>
+<script>
+    $('#sandbox-container .input-daterange').datepicker({
+    });
+</script>
+
+
+
+<script>
+    function hideSeries1(){
+        $('#series1').hide();
+    }
+
+    function hideSeries2(){
+        $('#series2').hide();
+    }
+
+    function hideStack1() {
+        $('#stack1').hide();
+    }
+
+    function hideStack2(){
+            $('#stack2').hide();
+    }
+</script>
+
 
 
 </body>
