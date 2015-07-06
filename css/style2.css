@@ -37,6 +37,7 @@ a .fa {margin-right:5px;}
 {color:#777;float:left;line-height: 30px; margin-right:20px;}
 
 .text-med{font-size:16px;}
+.text-med{font-size:16px;}
 
 hr{border-top: 1px solid #ccc;}
 
@@ -1182,6 +1183,8 @@ td.text-button a:hover{color:#004071;}
 .tablekpitarget .form-control-small{width:50px;margin-left:4px; background-color: #FAFAFA;border: 1px solid #ccc;}
 .tablekpitarget thead {background: none;color:#3f454f;font-weight: bold;}
 .tablekpitarget thead th{color:#3f454f;font-weight: bold;}
+
+.row-left{float:left;}
 
 .trafficlight, .title, .description_year{float:left;}
 .trafficlight
