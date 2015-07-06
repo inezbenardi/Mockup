@@ -42,7 +42,7 @@
             </div>
         </div>
         <ul class="main-nav">
-            <li class="active"><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
+            <li><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
@@ -80,7 +80,7 @@
 
                 </ul>
             </li>
-            <li><a href="#" class="menu_plan"><i class="fa fa-calendar"></i><span>PLAN</span></a>
+            <li class="active"><a href="#" class="menu_plan"><i class="fa fa-calendar"></i><span>PLAN</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Business Indicator<span class="fa fa-angle-down"></span></a><br/>
@@ -174,138 +174,169 @@
 
 
         <section>
-
+            <div class="row">
             <div class="title_page" style="border:none!important;">
-                <div class="row">
 
-                    <div class="title">Template Editor</div>
+
+                    <div class="title">Create KPI Target</div>
 
                 </div>
-                <div class="row">
 
-                    <a href="#" class="text-button">
-                        <span class="fa fa-plus-circle"></span>
-                        New
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <form class="form-inline form-templateeditor">
-                        <div class="form-group">
-
-                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Search">
-
-                        </div>
-                        <a href="#" class="btn-darkblue"><span class="fa fa-search"></span>Search</a>
-                        <a href="#" class="btn-lightblue"><span class="fa fa-repeat"></span>Clear</a>
-                    </form>
-                    <form class="form-inline" style="margin:5px 40px 0px 25px;padding-right:30px;">
-                        <div class="form-group">
-                            <label>Record / Page :</label>
-                            <select class="form-control">
-                                <option>30</option>
-                                <option>45</option>
-                                <option>60</option>
-
-                            </select>
-                        </div>
-                        <a href="#" class="btn-lightblue"><span class="fa fa-refresh"></span>Refresh</a>
-                    </form>
-                </div>
             </div>
 
-                <div class="col-md-12">
-                    <table class="table table-hover table-striped table-bordered">
-                        <thead>
-                        <tr>
-                            <th>No</th>
-                            <th style="width:20%;">Template</th>
-                            <th>Rows</th>
-                            <th style="width:30%;">Remarks</th>
-                            <th>Active</th>
-                            <th>Refresh Time</th>
-                            <th style="width:13%;">Action</th>
+            <div class="row">
+                <form class="form-inline">
+                    <div class="form-group"
+                         style="margin:5px 40px 0px 25px;padding-right:30px;">
+                        <label>Period :</label>
+                        <select class="form-control">
+                            <option>Yearly</option>
+                            <option>Monthly</option>
+                        </select>
+                    </div>
+                </form>
 
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr data-toggle="modal" data-target="#ModalFatality">
-
-                            <td>1</td>
-                            <td>Economic Summary</td>
-                            <td>1</td>
-                            <td>-</td>
-                            <td>Yes</td>
-                            <td>1 Minute</td>
-                            <td class="text-button" style="margin:auto;">
-
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
-
-                            </td>
+          </div>
 
 
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>PMS Summary</td>
-                            <td>1</td>
-                            <td>-</td>
-                            <td>Yes</td>
-                            <td>1 Minute</td>
-                            <td class="text-button" style="margin:auto;">
 
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
 
-                            </td>
-                        </tr>
+            <div class="whitebox-full">
+                <h5>Safety</h5><hr>
+                <table class="no-border tablekpitarget">
+                    <thead>
+                    <tr>
+                        <th style="width:250px;"></th>
+                        <th style="width:100px;"></th>
+                        <th style="width:200px;"></th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Okt</th>
+                        <th>Nov</th>
+                        <th>Des</th>
 
-                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
-                            <td>3</td>
-                            <td>Safety</td>
-                            <td>2</td>
-                            <td>-</td>
-                            <td>Yes</td>
-                            <td>1 Minute</td>
-                            <td class="text-button" style="margin:auto;">
+                    </tr>
+                    </thead>
 
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
+                    <tbody>
+                    <tr>
+                        <td><h6>Fatality / Strap Disability</h6></td>
+                        <td><h6>Case</h6></td>
+                        <td><input type="text" class="form-control" placeholder="Remark"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
 
-                            </td>
-                        </tr>
-
-                        <tr data-toggle="modal" data-target="#ModalViewTemplate">
-                            <td>4</td>
-                            <td>Template Baru</td>
-                            <td>2</td>
-                            <td>ss</td>
-                            <td>Yes</td>
-                            <td>30 Minute</td>
-                            <td class="text-button" style="margin:auto;">
-
-                                <a href="#" data-toggle="modal" data-target="#ModalViewTemplate"><span
-                                        class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-trash-o"></span>Delete</a>
-
-                            </td>
-                        </tr>
-
-                        <tr class="greyrow">
-                            <td colspan="6"
-                                style="text-align: left;color:white;background-color:#3f454f!important;"></td>
-                            <td style="background-color:#3f454f;color:white;">Total Data 4 Data</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
-                </div>
+                    </tr>
+                    <tr>
+                        <td><h6>QHSE Training Attend</h6></td>
+                        <td><h6>%</h6></td>
+                        <td><input type="text" class="form-control" placeholder="Remark"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                    </tr>
+                    <tr>
+                        <td><h6>RIF</h6></td>
+                        <td><h6>Number</h6></td>
+                        <td><input type="text" class="form-control" placeholder="Remark"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+
+            <div class="whitebox-full">
+                <h5>Productivity & Efficiency</h5><hr>
+                <table class="no-border tablekpitarget">
+                    <thead>
+                    <tr>
+                        <th style="width:250px;"></th>
+                        <th style="width:100px;"></th>
+                        <th style="width:200px;"></th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Okt</th>
+                        <th>Nov</th>
+                        <th>Des</th>
+
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><h6>Plant Availability</h6></td>
+                        <td><h6>Case</h6></td>
+                        <td><input type="text" class="form-control" placeholder="Remark"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+                        <td><input type="text" class="form-control-small"></td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+<div class="col-md-12">
+            <div class="centering margin">
+                <hr style="margin-bottom:60px;">
+                <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+                <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+                <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
+                </div>
+</div>
         </section>
 
 
@@ -315,65 +346,77 @@
 
 
 <!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="ModalViewTemplate" tabindex="-1" role="dialog"
+<div class="modal fade bs-example-modal-lg" id="ModalAddPilar" tabindex="-1" role="dialog"
      aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-
+                <h5>Add Pilar</h5>
 
             </div>
             <div class="modal-body">
                 <form class="form-inline">
-                <div class="form-group">
+                <div class="form-group" style="margin-bottom:20px;">
                     <label>Template Name :</label>
-                    <input type="text" class="form-control2" placeholder="Safety">
+                    <input type="text" class="form-control" placeholder="Safety">
                 </div>
                 </form>
 
                 <form class="form-inline">
-                    <div class="form-group">
-                        <label>Dashboard Selection :</label>
-                        <input type="text" class="form-control2" placeholder="">
-                        <input type="text" class="form-control2 form-padding" placeholder="">
-                    </div>
-                    <div class="form-padding" style="margin-bottom:20px;">
-                    <a href="#" class="btn-lightblue" >Add More</a>
-                    <a href="#" class="btn-lightblue" >Print</a>
-                    </div>
-                </form>
 
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label>Refresh Time :</label>
-                        <input type="text" class="form-control2" style="width:45px;" placeholder="1">Minute
-                    </div>
-                </form>
+                        <form class="form-group" >
+                            <input data-val="true" data-val-number="The field PmsSummaryId must be a number." data-val-required="The PmsSummaryId field is required." id="PmsSummaryId" name="PmsSummaryId" type="hidden" value="1">
+                            <div class="form-group form-list">
+                                <label>Pillar</label>
+                                <select class="form-control ddl-pillar" data-val="true" data-val-number="The field PillarId must be a number." data-val-required="The PillarId field is required." id="PillarId" name="PillarId"><option value="">Select Pillar</option>
+                                    <option value="2">PRODUCTIVITY AND EFFICIENCY</option>
+                                    <option value="3">FINANCIAL STRENGTH</option>
+                                    <option value="4">STAKEHOLDER RESPONSIBILITIES</option>
+                                </select>
+                                <span class="field-validation-valid" data-valmsg-for="PillarId" data-valmsg-replace="true"></span>
+                            </div>
 
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label>Remark :</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                    </div>
-                </form>
+                            <div class="form-group form-list">
+                                <label>Scoring Type</label>
+                                <select class="form-control" data-val="true" data-val-required="The ScoringType field is required." id="ScoringType" name="ScoringType"><option value="">Select Scoring Type</option>
+                                    <option value="Boolean">Boolean</option>
+                                    <option value="Positive">Positive</option>
+                                    <option value="Negative">Negative</option>
+                                </select>
+                                <span class="field-validation-valid" data-valmsg-for="ScoringType" data-valmsg-replace="true"></span>
+                            </div>
 
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label>Activate :</label>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                Yes
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                No
-                            </label>
-                        </div>
+                            <div class="form-group form-list">
+                                <label>Weight</label>
+                                <input class="form-control" data-val="true" data-val-number="The field Weight must be a number." data-val-required="The Weight field is required." id="Weight" name="Weight" type="text" value="0">
+                                <span class="field-validation-valid" data-valmsg-for="Weight" data-valmsg-replace="true"></span>
+                            </div>
+
+
+                            <div class="form-group form-list form-inline">
+                                <label>Scoring Indicator</label>
+                                <button type="button" class="btn btn-default form-inline add-score-indicator"><i class="glyphicon glyphicon-plus"></i></button>
+                            </div>
+                            <div class="score-indicator-wrapper">
+                                <div class="row hidden-scoring-indicator" style="margin-bottom: 10px;">
+                                    <div class="col-sm-12 form-inline">
+
+                                        <input type="hidden" name="ScoreIndicators.Index" value="0">
+                                        <input class="form-control si-id" type="text" name="ScoreIndicators[0].Id" value="0"  style="width:50px;">
+                                        <input class="form-control si-expression" name="ScoreIndicators[0].Expression" placeholder="Expression, e.g : x > 20" type="text"  style="width:200px;">
+                                        <input class="form-control si-color" name="ScoreIndicators[0].Color" placeholder="Color" type="text"  style="width:150px;">
+
+                                        <button type="button" class="btn btn-default form-control remove-score-indicator" style="display: none;"><i class="glyphicon glyphicon-minus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <span id="counter" data-score-indicator="1"></span>
+
+
+                        </form>
                     </div>
                 </form>
 

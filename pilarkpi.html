@@ -42,7 +42,7 @@
             </div>
         </div>
         <ul class="main-nav">
-            <li ><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
+            <li><a href="#" class="menu_dashboard"><i class="fa fa-dashboard"></i><span>DASH BOARD</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Corporate Performance<span class="fa fa-angle-down"></span></a><br/>
@@ -80,7 +80,7 @@
 
                 </ul>
             </li>
-            <li><a href="#" class="menu_plan"><i class="fa fa-calendar"></i><span>PLAN</span></a>
+            <li class="active"><a href="#" class="menu_plan"><i class="fa fa-calendar"></i><span>PLAN</span></a>
                 <ul class="sub-nav">
                     <li>
                         <a href="#">Business Indicator<span class="fa fa-angle-down"></span></a><br/>
@@ -149,7 +149,7 @@
                     <li><a href="#">KPI Test</a></li>
                 </ul>
             </li>
-            <li class="active"><a href="#" class="menu_setting"><i class="fa fa-cog"></i><span>SETTING</span></a>
+            <li><a href="#" class="menu_setting"><i class="fa fa-cog"></i><span>SETTING</span></a>
                 <ul class="sub-nav">
 
                     <li><a href="production.html">Group Management</a></li>
@@ -178,18 +178,14 @@
             <div class="title_page" style="border:none!important;">
                 <div class="row">
 
-                    <div class="title">Artifact Designer</div>
+                    <div class="title">PMS Summary Configuration</div>
 
                 </div>
                 <div class="row">
 
-                    <a href="#" class="text-button" data-toggle="offcanvas" role="button">
-                        <span class="fa fa-desktop"></span>
-                        Full Screen
-                    </a>
-                    <a href="artifactdesigner-new.html" class="text-button">
+                    <a data-toggle="modal" data-target="#ModalAddPilar" class="text-button">
                         <span class="fa fa-plus-circle"></span>
-                        New
+                        Add PMS Config Detail
                     </a>
                 </div>
             </div>
@@ -219,132 +215,37 @@
                 </div>
             </div>
 
+            <div class="col-md-12">
+            <div class="whitebox-full" style="width:100%;">
+
+                <div class="row-full"><h3>Pilar & Key Performance Indicator</h3><a data-toggle="modal" data-target="#ModalAddPilar" class="btn-lightblue">Add Pilar</a></div>
+                <div class="row-full"><div class="text-grey text-med"><div class="heading">Pilar Name</div>: Safety</div><a data-toggle="modal" data-target="#ModalAddPilar" class="btn-lightblue">Edit Pilar</a></div>
+                <div class="row-full"><div class="text-grey text-med"><div class="heading">Total Score for Pilar</div>: 50</div></div>
+            </div>
+            </div>
+
                 <div class="col-md-12">
-                    <table class="table table-hover table-striped table-bordered">
+                    <table class="table table-striped table-bordered table-responsive table-hover">
                         <thead>
                         <tr>
-                            <th>No</th>
-                            <th style="width:40%;">Artifact Name</th>
-                            <th style="width:12%;">Graphic Type</th>
-                            <th style="width:30%;">Header Title</th>
-                            <th>Period Aggregation</th>
-                            <th style="width:20%;">Action</th>
-
+                            <th rowspan="2">Kpi Name</th>
+                            <th rowspan="2">Measurement</th>
+                            <th rowspan="2">Weight</th>
+                            <th rowspan="2">Scoring Type</th>
+                            <th rowspan="2">Scoring Indicator</th>
+                            <th rowspan="2">Action</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-
-                            <td>1</td>
-                            <td>Plant Availabilty Graphic</td>
-                            <td>Coloumn</td>
-                            <td>2014 - 2007</td>
-                            <td>Yearly</td>
-                             <td class="text-button" style="margin:auto;">
-                                 <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                 <a href="artifactdesigner-edit.html"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                 <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                             </td>
-
-
-                        </tr>
-                        <tr>
-
-                            <td>2</td>
-                            <td>QHSE Tabular 2</td>
-                            <td>Tabular</td>
-                            <td>QHSE Performance</td>
-                            <td>Undefined</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-                            </td>
-
-
-                        </tr>
 
                         <tr>
-
-                            <td>3</td>
-                            <td>QHSE Closure Action VS Near Miss</td>
-                            <td>Double Axis</td>
-                            <td>Closure Action VS Near Miss</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
+                            <td>fatality</td>
+                            <td>Case</td>
+                            <td>100</td>
+                            <td>Boolean</td>
+                            <td class="text-button"><a data-target="#modalDialog" data-toggle="modal" href="/PmsConfigDetails/ScoreIndicatorDetails/1"><span class="fa fa-table"></span>View Scoring Indicator</a></td>
+                            <td class="text-button"><a data-target="#modalDialog" data-toggle="modal" href="/PmsConfigDetails/Update/1"><span class="fa fa-pencil-square-o"></span>Edit</a></td>
                         </tr>
-
-                        <tr>
-
-                            <td>4</td>
-                            <td>QHSE Training Attend</td>
-                            <td>Double Axis</td>
-                            <td>QHSE Training Attend</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>5</td>
-                            <td>QHSE Security Incident</td>
-                            <td>Speedometer</td>
-                            <td>QHSE Security Incident</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>6</td>
-                            <td>QHSE Spider 1</td>
-                            <td>Spider Web 2</td>
-                            <td>QHSE Lagging Indicator</td>
-                            <td>Monthly</td>
-                            <td class="text-button" style="margin:auto;">
-                                <a href="#" data-toggle="modal" data-target="#ModalViewArtifact"><span class="fa fa-eye"></span>View</a>
-                                <a href="#"  data-toggle="modal" data-target="#ModalViewTemplate"><span class="fa fa-pencil-square-o"></span>Edit</a>
-                                <a href="#"><span class="fa fa-times"></span>Delete</a>
-
-
-                            </td>
-
-
-                        </tr>
-
-                        <tr class="greyrow">
-                            <td colspan="5"
-                                style="text-align: left;color:white;background-color:#3f454f!important;"></td>
-                            <td style="background-color:#3f454f;color:white;">Total Data 6 Data</td>
-                        </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -356,45 +257,95 @@
 </div>
 <!-- ./wrapper -->
 
+
 <!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="ModalViewArtifact" tabindex="-1" role="dialog"
-     aria-labelledby="ModalViewArtifact" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+<div class="modal fade bs-example-modal-lg" id="ModalAddPilar" tabindex="-1" role="dialog"
+     aria-labelledby="ModalViewTemplateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <div class="row centering">
-                    <div class="title">2014 - 2007</div>
-                    <div class="description_year">Yearly Range 2014 - 2007</div>
-                </div>
+                <h5>Add Pilar</h5>
 
             </div>
             <div class="modal-body">
-                <div class="btn-group btn-more">
-                    <button type="button" class="dropdown-toggle icon_more" data-toggle="dropdown"
-                            aria-expanded="false">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><span class="fa fa-print"></span>Print Chart</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><span class="fa fa-bar-chart-o"></span>View Tabular</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><span class="fa fa-file-image-o"></span>Download PNG Image</a></li>
-                        <li><a href="#"><span class="fa fa-file-image-o"></span>Download JPEG Image</a></li>
-                        <li><a href="#"><span class="fa fa-file-pdf-o"></span>Download PDF Document</a></li>
-                        <li><a href="#"><span class="fa fa-file-text-o"></span>Download SVG Vector Image</a>
-                        </li>
-                    </ul>
+                <form class="form-inline">
+                <div class="form-group" style="margin-bottom:20px;">
+                    <label>Template Name :</label>
+                    <input type="text" class="form-control" placeholder="Safety">
                 </div>
-                <div class="content_tab centering"><img src="css/img/graphic10.PNG"/></div>
+                </form>
+
+                <form class="form-inline">
+
+                        <form class="form-group" >
+                            <input data-val="true" data-val-number="The field PmsSummaryId must be a number." data-val-required="The PmsSummaryId field is required." id="PmsSummaryId" name="PmsSummaryId" type="hidden" value="1">
+                            <div class="form-group form-list">
+                                <label>Pillar</label>
+                                <select class="form-control ddl-pillar" data-val="true" data-val-number="The field PillarId must be a number." data-val-required="The PillarId field is required." id="PillarId" name="PillarId"><option value="">Select Pillar</option>
+                                    <option value="2">PRODUCTIVITY AND EFFICIENCY</option>
+                                    <option value="3">FINANCIAL STRENGTH</option>
+                                    <option value="4">STAKEHOLDER RESPONSIBILITIES</option>
+                                </select>
+                                <span class="field-validation-valid" data-valmsg-for="PillarId" data-valmsg-replace="true"></span>
+                            </div>
+
+                            <div class="form-group form-list">
+                                <label>Scoring Type</label>
+                                <select class="form-control" data-val="true" data-val-required="The ScoringType field is required." id="ScoringType" name="ScoringType"><option value="">Select Scoring Type</option>
+                                    <option value="Boolean">Boolean</option>
+                                    <option value="Positive">Positive</option>
+                                    <option value="Negative">Negative</option>
+                                </select>
+                                <span class="field-validation-valid" data-valmsg-for="ScoringType" data-valmsg-replace="true"></span>
+                            </div>
+
+                            <div class="form-group form-list">
+                                <label>Weight</label>
+                                <input class="form-control" data-val="true" data-val-number="The field Weight must be a number." data-val-required="The Weight field is required." id="Weight" name="Weight" type="text" value="0">
+                                <span class="field-validation-valid" data-valmsg-for="Weight" data-valmsg-replace="true"></span>
+                            </div>
+
+
+                            <div class="form-group form-list form-inline">
+                                <label>Scoring Indicator</label>
+                                <button type="button" class="btn btn-default form-inline add-score-indicator"><i class="glyphicon glyphicon-plus"></i></button>
+                            </div>
+                            <div class="score-indicator-wrapper">
+                                <div class="row hidden-scoring-indicator" style="margin-bottom: 10px;">
+                                    <div class="col-sm-12 form-inline">
+
+                                        <input type="hidden" name="ScoreIndicators.Index" value="0">
+                                        <input class="form-control si-id" type="text" name="ScoreIndicators[0].Id" value="0"  style="width:50px;">
+                                        <input class="form-control si-expression" name="ScoreIndicators[0].Expression" placeholder="Expression, e.g : x > 20" type="text"  style="width:200px;">
+                                        <input class="form-control si-color" name="ScoreIndicators[0].Color" placeholder="Color" type="text"  style="width:150px;">
+
+                                        <button type="button" class="btn btn-default form-control remove-score-indicator" style="display: none;"><i class="glyphicon glyphicon-minus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <span id="counter" data-score-indicator="1"></span>
+
+
+                        </form>
+                    </div>
+                </form>
+
+                <div class="centering margin">
+                    <hr style="margin-bottom:60px;">
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+                     <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+                    <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
+
 
             </div>
 
         </div>
     </div>
 </div>
+
 
 <!-- jQuery 2.0.2 -->
 
