@@ -489,6 +489,8 @@ h6{  color: #3f454f;
 line-height: 30px;
 float:left;}
 
+.blue_text{color:#004071;font-size:20px;}
+
 /* Page Header */
 .page-header {
   margin: 10px 0 20px 0;
@@ -898,6 +900,10 @@ table.text-center th {
 .modal-header
 {border-bottom:none;}
 
+.nav-tabs>li>a {
+    text-align: center;
+    color: #3f454f;
+}
 
 .modal-body .nav-tabs>li>a
 {
@@ -909,7 +915,8 @@ table.text-center th {
 background-color:#febe10; color:white;border:none;text-align: center;
 }
 
-.tab-content{margin-top:30px;text-align: center;}
+.tab-content{margin-top:30px;}
+.content_tab{text-align: center;}
 
 
 .dropdown-toggle.icon_more
@@ -1191,7 +1198,7 @@ td.text-button a{font-family:"Helvetica Neue", Arial, sans-serif; color:#72afd2;
 td.text-button a:hover{color:#004071;}
 
 
-.form-inline .form-group{margin-right:10px;}
+.form-inline .form-group{margin-right:10px;margin-bottom:20px;}
 .form-templateeditor{margin:5px 40px 20px 25px;padding-right:30px; border-right:solid 1px #3f454f; margin-left:15px;float:left;}
 
 .input-group .form-control{width:25%;margin-left:4px;}
@@ -1352,14 +1359,50 @@ h2{margin-top:0;margin-bottom:20px;float:left;}
     margin:15px 20px 20px 0;
 }
 
+.whitebox-card
+{
+    float:left;
+    background-color: white;
+    padding:20px;
+    width:23%;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+
+.ongoing
+{
+    float:left;
+    background-color:#004071!important;
+    color:white!important;
+    padding:20px;
+    width:23%;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.white_text
+{
+    color:white;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.grey_text
+{
+
+    font-size:24px;
+    margin-bottom:20px;
+}
 
 .form-control{width:300px;}
+.form-control3{width:100%;margin-bottom:20px;}
 
 .form-periode
 {margin-left:204px;}
 
 .form-list
-{width:100%;padding-bottom:20px;}
+{width:100%;}
 
 .form-padding{
     margin-left:204px;

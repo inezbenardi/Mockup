@@ -101,7 +101,7 @@
                         <a href="#">Performance Setting<span class="fa fa-angle-down"></span></a><br/>
                         <ul class="sublevel">
                             <li><a href="corporateportfolio.html"> Corporate Portfolio</a></li>
-                            <li> <a href="#"> Setting Target</a></li>
+                            <li><a href="#"> Setting Target</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Plan Resource</a></li>
@@ -129,7 +129,7 @@
             </li>
             <li><a href="#" class="menu_execute"><i class="fa fa-gavel"></i><span>EXECUTE</span></a>
                 <ul class="sub-nav">
-                    <li><a href="#">KPI Achievement</a></li>
+                    <li><a href="kpiachievement.html">KPI Achievement</a></li>
                     <li><a href="#">Actual Resource</a></li>
                     <li><a href="#">Project Progress</a></li>
                 </ul>
@@ -175,168 +175,553 @@
 
         <section>
             <div class="row">
-            <div class="title_page" style="border:none!important;">
+                <div class="title_page" style="border:none!important;">
 
+                    <div class="title">KPI Target</div>
+                    <div class="description_year">QHSE</div>
 
-                    <div class="title">Create KPI Target</div>
 
                 </div>
 
             </div>
 
-            <div class="row">
-                <form class="form-inline">
-                    <div class="form-group"
-                         style="margin:5px 40px 0px 25px;padding-right:30px;">
-                        <label class="labletop">Period :</label>
-                        <select class="form-control">
-                            <option>Yearly</option>
-                            <option>Monthly</option>
-                        </select>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active">
+                    <a href="#yearly" aria-controls="home" role="tab" data-toggle="tab">
+
+                        <div>Yearly</div>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#monthly" aria-controls="home" role="tab" data-toggle="tab">
+
+                        <div>Monthly</div>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#daily" aria-controls="home" role="tab" data-toggle="tab">
+
+                        <div>Daily</div>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="yearly">
+
+
+                    <h5>QHSE Training Attend (%)</h5>
+
+                    <div class="whitebox-card ongoing">
+
+                        <div class="grey_text">2015</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
                     </div>
-                </form>
 
-          </div>
+                    <div class="whitebox-card">
 
+                        <div class="grey_text">2016</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
 
+                    </div>
 
+                    <div class="whitebox-card">
 
-            <div class="whitebox-full">
-                <h5>Safety</h5><hr>
-                <table class="no-border tablekpitarget">
-                    <thead>
-                    <tr>
-                        <th style="width:250px;"></th>
-                        <th style="width:100px;"></th>
-                        <th style="width:200px;"></th>
-                        <th>Jan</th>
-                        <th>Feb</th>
-                        <th>Mar</th>
-                        <th>Apr</th>
-                        <th>May</th>
-                        <th>Jun</th>
-                        <th>Jul</th>
-                        <th>Aug</th>
-                        <th>Sep</th>
-                        <th>Okt</th>
-                        <th>Nov</th>
-                        <th>Des</th>
+                        <div class="grey_text">2017</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
 
-                    </tr>
-                    </thead>
+                    </div>
 
-                    <tbody>
-                    <tr>
-                        <td><h6>Fatality / Strap Disability</h6></td>
-                        <td><h6>Case</h6></td>
-                        <td><input type="text" class="form-control" placeholder="Remark"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
+                    <div class="whitebox-card">
 
-                    </tr>
-                    <tr>
-                        <td><h6>QHSE Training Attend</h6></td>
-                        <td><h6>%</h6></td>
-                        <td><input type="text" class="form-control" placeholder="Remark"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                    </tr>
-                    <tr>
-                        <td><h6>RIF</h6></td>
-                        <td><h6>Number</h6></td>
-                        <td><input type="text" class="form-control" placeholder="Remark"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+                        <div class="grey_text">2018</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
 
-            <div class="whitebox-full">
-                <h5>Productivity & Efficiency</h5><hr>
-                <table class="no-border tablekpitarget">
-                    <thead>
-                    <tr>
-                        <th style="width:250px;"></th>
-                        <th style="width:100px;"></th>
-                        <th style="width:200px;"></th>
-                        <th>Jan</th>
-                        <th>Feb</th>
-                        <th>Mar</th>
-                        <th>Apr</th>
-                        <th>May</th>
-                        <th>Jun</th>
-                        <th>Jul</th>
-                        <th>Aug</th>
-                        <th>Sep</th>
-                        <th>Okt</th>
-                        <th>Nov</th>
-                        <th>Des</th>
+                    </div>
+                    <div class="whitebox-card">
 
-                    </tr>
-                    </thead>
+                        <div class="grey_text">2019</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
 
-                    <tbody>
-                    <tr>
-                        <td><h6>Plant Availability</h6></td>
-                        <td><h6>Case</h6></td>
-                        <td><input type="text" class="form-control" placeholder="Remark"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
-                        <td><input type="text" class="form-control-small"></td>
+                    </div>
 
-                    </tr>
+                    <div class="whitebox-card">
 
-                    </tbody>
-                </table>
-            </div>
-<div class="col-md-12">
-            <div class="centering margin">
-                <hr style="margin-bottom:60px;">
-                <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
-                <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
-                <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
+                        <div class="grey_text">2020</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2021</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2022</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2023</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2024</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2025</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2026</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
                 </div>
-</div>
+
+                <div role="tabpanel" class="tab-pane" id="monthly">
+
+                    <h5>QHSE Training Attend (%)</h5>
+
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="labletop">Year :</label>
+                            <select class="form-control">
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <div class="whitebox-card ">
+
+                            <div class="grey_text">January</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">February</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">March</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">April</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">May</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">June</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">July</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                        <div class="whitebox-card">
+
+                            <div class="grey_text">August</div>
+                            <div><input type="text" class="form-control3" placeholder="Value"></div>
+                            <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                        </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">September</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card ongoing">
+
+                        <div class="grey_text">October</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">November</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">December</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="daily">
+
+                    <h5>QHSE Training Attend (%)</h5>
+
+                    <form class="form-inline">
+                        <div class="form-group"
+                             style="padding-right:30px; border-right:solid 1px #3f454f;">
+                            <label class="labletop">Year :</label>
+                            <select class="form-control">
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-top:5px;">
+                            <label class="labletop">Month :</label>
+                            <select class="form-control">
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                                <option>May</option>
+                                <option>Jun</option>
+                                <option>Jul</option>
+                                <option>Aug</option>
+                                <option>Sep</option>
+                                <option>Oct</option>
+                                <option>Nov</option>
+                                <option>Dec</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">1</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">2</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">3</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">4</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">5</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">6</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">7</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">8</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">9</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">10</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">11</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">12</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">13</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">14</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">15</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">16</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">17</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">18</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">19</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">20</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">21</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">22</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">23</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">24</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">25</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card ongoing">
+
+                        <div class="grey_text">26</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">27</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">28</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">29</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">30</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+                    <div class="whitebox-card">
+
+                        <div class="grey_text">31</div>
+                        <div><input type="text" class="form-control3" placeholder="Value"></div>
+                        <div><textarea class="form-control3" rows="3" placeholder="Remark"></textarea></div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="centering margin">
+                    <hr style="margin-bottom:60px;">
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+                    <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span
+                            class="fa fa-times"></span>Cancel</a>
+                </div>
+            </div>
         </section>
 
 
@@ -358,73 +743,94 @@
             </div>
             <div class="modal-body">
                 <form class="form-inline">
-                <div class="form-group" style="margin-bottom:20px;">
-                    <label>Template Name :</label>
-                    <input type="text" class="form-control" placeholder="Safety">
-                </div>
+                    <div class="form-group" style="margin-bottom:20px;">
+                        <label>Template Name :</label>
+                        <input type="text" class="form-control" placeholder="Safety">
+                    </div>
                 </form>
 
                 <form class="form-inline">
 
-                        <form class="form-group" >
-                            <input data-val="true" data-val-number="The field PmsSummaryId must be a number." data-val-required="The PmsSummaryId field is required." id="PmsSummaryId" name="PmsSummaryId" type="hidden" value="1">
-                            <div class="form-group form-list">
-                                <label>Pillar</label>
-                                <select class="form-control ddl-pillar" data-val="true" data-val-number="The field PillarId must be a number." data-val-required="The PillarId field is required." id="PillarId" name="PillarId"><option value="">Select Pillar</option>
-                                    <option value="2">PRODUCTIVITY AND EFFICIENCY</option>
-                                    <option value="3">FINANCIAL STRENGTH</option>
-                                    <option value="4">STAKEHOLDER RESPONSIBILITIES</option>
-                                </select>
-                                <span class="field-validation-valid" data-valmsg-for="PillarId" data-valmsg-replace="true"></span>
-                            </div>
+                    <form class="form-group">
+                        <input data-val="true" data-val-number="The field PmsSummaryId must be a number."
+                               data-val-required="The PmsSummaryId field is required." id="PmsSummaryId"
+                               name="PmsSummaryId" type="hidden" value="1">
 
-                            <div class="form-group form-list">
-                                <label>Scoring Type</label>
-                                <select class="form-control" data-val="true" data-val-required="The ScoringType field is required." id="ScoringType" name="ScoringType"><option value="">Select Scoring Type</option>
-                                    <option value="Boolean">Boolean</option>
-                                    <option value="Positive">Positive</option>
-                                    <option value="Negative">Negative</option>
-                                </select>
-                                <span class="field-validation-valid" data-valmsg-for="ScoringType" data-valmsg-replace="true"></span>
-                            </div>
+                        <div class="form-group form-list">
+                            <label>Pillar</label>
+                            <select class="form-control ddl-pillar" data-val="true"
+                                    data-val-number="The field PillarId must be a number."
+                                    data-val-required="The PillarId field is required." id="PillarId" name="PillarId">
+                                <option value="">Select Pillar</option>
+                                <option value="2">PRODUCTIVITY AND EFFICIENCY</option>
+                                <option value="3">FINANCIAL STRENGTH</option>
+                                <option value="4">STAKEHOLDER RESPONSIBILITIES</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="PillarId"
+                                  data-valmsg-replace="true"></span>
+                        </div>
 
-                            <div class="form-group form-list">
-                                <label>Weight</label>
-                                <input class="form-control" data-val="true" data-val-number="The field Weight must be a number." data-val-required="The Weight field is required." id="Weight" name="Weight" type="text" value="0">
-                                <span class="field-validation-valid" data-valmsg-for="Weight" data-valmsg-replace="true"></span>
-                            </div>
+                        <div class="form-group form-list">
+                            <label>Scoring Type</label>
+                            <select class="form-control" data-val="true"
+                                    data-val-required="The ScoringType field is required." id="ScoringType"
+                                    name="ScoringType">
+                                <option value="">Select Scoring Type</option>
+                                <option value="Boolean">Boolean</option>
+                                <option value="Positive">Positive</option>
+                                <option value="Negative">Negative</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="ScoringType"
+                                  data-valmsg-replace="true"></span>
+                        </div>
+
+                        <div class="form-group form-list">
+                            <label>Weight</label>
+                            <input class="form-control" data-val="true"
+                                   data-val-number="The field Weight must be a number."
+                                   data-val-required="The Weight field is required." id="Weight" name="Weight"
+                                   type="text" value="0">
+                            <span class="field-validation-valid" data-valmsg-for="Weight"
+                                  data-valmsg-replace="true"></span>
+                        </div>
 
 
-                            <div class="form-group form-list form-inline">
-                                <label>Scoring Indicator</label>
-                                <button type="button" class="btn btn-default form-inline add-score-indicator"><i class="glyphicon glyphicon-plus"></i></button>
-                            </div>
-                            <div class="score-indicator-wrapper">
-                                <div class="row hidden-scoring-indicator" style="margin-bottom: 10px;">
-                                    <div class="col-sm-12 form-inline">
+                        <div class="form-group form-list form-inline">
+                            <label>Scoring Indicator</label>
+                            <button type="button" class="btn btn-default form-inline add-score-indicator"><i
+                                    class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                        <div class="score-indicator-wrapper">
+                            <div class="row hidden-scoring-indicator" style="margin-bottom: 10px;">
+                                <div class="col-sm-12 form-inline">
 
-                                        <input type="hidden" name="ScoreIndicators.Index" value="0">
-                                        <input class="form-control si-id" type="text" name="ScoreIndicators[0].Id" value="0"  style="width:50px;">
-                                        <input class="form-control si-expression" name="ScoreIndicators[0].Expression" placeholder="Expression, e.g : x > 20" type="text"  style="width:200px;">
-                                        <input class="form-control si-color" name="ScoreIndicators[0].Color" placeholder="Color" type="text"  style="width:150px;">
+                                    <input type="hidden" name="ScoreIndicators.Index" value="0">
+                                    <input class="form-control si-id" type="text" name="ScoreIndicators[0].Id" value="0"
+                                           style="width:50px;">
+                                    <input class="form-control si-expression" name="ScoreIndicators[0].Expression"
+                                           placeholder="Expression, e.g : x > 20" type="text" style="width:200px;">
+                                    <input class="form-control si-color" name="ScoreIndicators[0].Color"
+                                           placeholder="Color" type="text" style="width:150px;">
 
-                                        <button type="button" class="btn btn-default form-control remove-score-indicator" style="display: none;"><i class="glyphicon glyphicon-minus"></i></button>
-                                    </div>
+                                    <button type="button" class="btn btn-default form-control remove-score-indicator"
+                                            style="display: none;"><i class="glyphicon glyphicon-minus"></i></button>
                                 </div>
-                                <div class="clearfix"></div>
                             </div>
-                            <span id="counter" data-score-indicator="1"></span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <span id="counter" data-score-indicator="1"></span>
 
 
-                        </form>
-                    </div>
-                </form>
+                    </form>
+            </div>
+            </form>
 
-                <div class="centering margin">
-                    <hr style="margin-bottom:60px;">
-                    <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
-                     <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
-                    <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span class="fa fa-times"></span>Cancel</a>
+            <div class="centering margin">
+                <hr style="margin-bottom:60px;">
+                <a href="#" class="btn-darkblue btn-large"><span class="fa fa-floppy-o"></span>Save</a>
+                <a href="#" class="btn-darkblue btn-large"><span class="fa fa-repeat"></span>Clear</a>
+                <a data-dismiss="modal" aria-label="Close" class="btn-darkblue btn-large"><span
+                        class="fa fa-times"></span>Cancel</a>
 
 
             </div>
