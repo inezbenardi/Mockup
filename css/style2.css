@@ -1181,12 +1181,15 @@ margin-bottom:15px;}
     border-width: 0 5px 5px;
 }
 
-button.tooltip_description
-{border:none;
-background: none;
-    margin-left:15px;float: right;width:40%;
-    text-align:right;
-    margin-right:20px;}
+button.tooltip_description2
+{float:left;
+    background-color: white;
+    padding:15px;
+    width:23%;
+    margin-right:20px;
+    margin-bottom:20px;
+    border:none;
+}
 
 
 a.text-button{color:#717173;text-decoration: underline;float:left;margin-right:20px;font-weight: bold;}
@@ -1205,7 +1208,7 @@ td.text-button a:hover{color:#004071;}
 
 .tablekpitarget{text-align: center;}
 .tablekpitarget .form-control {width:90%;}
-.tablekpitarget .form-control-small{width:50px;margin-left:4px; background-color: #FAFAFA;border: 1px solid #ccc;}
+.tablekpitarget
 .tablekpitarget thead {background: none;color:#3f454f;font-weight: bold;}
 .tablekpitarget thead th{color:#3f454f;font-weight: bold;}
 
@@ -1272,6 +1275,9 @@ color: #004071;
     margin-bottom:21px;
 
 }
+
+.form-control-small{width:50px;margin-left:4px; background-color: #FAFAFA;border: 1px solid #ccc;}
+.form-control-small2{width:25px;margin-left:4px; background-color: #FAFAFA;border: 1px solid #ccc;}
 
 .graphic
 {float:left;
@@ -1363,8 +1369,18 @@ h2{margin-top:0;margin-bottom:20px;float:left;}
 {
     float:left;
     background-color: white;
-    padding:20px;
+    padding:15px;
     width:23%;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.whitebox-card-small
+{
+    float:left;
+    background-color: white;
+    padding:15px;
+    width:12.7%!important;
     margin-right:20px;
     margin-bottom:20px;
 }
@@ -1375,10 +1391,22 @@ h2{margin-top:0;margin-bottom:20px;float:left;}
     float:left;
     background-color:#004071!important;
     color:white!important;
-    padding:20px;
-    width:23%;
+
+
     margin-right:20px;
     margin-bottom:20px;
+}
+
+
+
+.remark_sign
+{
+    z-index: 9;
+    background-image: url("img/remark_sign.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+   float:left;
+
 }
 
 .white_text
@@ -1390,13 +1418,24 @@ h2{margin-top:0;margin-bottom:20px;float:left;}
 
 .grey_text
 {
-
-    font-size:24px;
-    margin-bottom:20px;
+    font-size:21px;
 }
 
+a .grey_text
+{
+    float:left;
+    font-size:24px;
+    color:#333;
+}
+
+a:hover .grey_text
+{
+    color:#febe10;
+}
+
+
 .form-control{width:300px;}
-.form-control3{width:100%;margin-bottom:20px;}
+.form-control3{width:auto;margin-bottom:20px;}
 
 .form-periode
 {margin-left:204px;}
