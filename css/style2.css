@@ -21,7 +21,8 @@ body {
 section{display:block;}
 
 a {
-  color: white;
+  color: #666;
+    text-decoration: underline;
 }
 a:hover,
 a:active,
@@ -1418,6 +1419,21 @@ h2{margin-top:0;margin-bottom:20px;float:left;}
 .grey_text
 {
     font-size:21px;
+}
+
+.grey_text a
+{
+    color:#666;
+    text-decoration: underline;
+
+}
+
+
+.grey_text a:hover
+{
+    color:#febe10;
+ 
+
 }
 
 a .grey_text
